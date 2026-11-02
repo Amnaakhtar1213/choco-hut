@@ -2,7 +2,7 @@ import React from 'react'
 
 const BestCard = ({item}) => {
   return (
-   <div className="flex flex-col items-center gap-2">
+   <div className="flex flex-col items-center">
     <div className="px-2 py-1 border-2 border-amber-50 bg-[#A7B48F] text-center rounded-2xl">
       <h1 className="text-[#FDF4EA] text-xl">{item.name}</h1>
     </div>

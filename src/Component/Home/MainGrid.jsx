@@ -1,6 +1,7 @@
 import React from 'react'
 import FeaturesProd from './FeaturesProd'
 import Best from "../Home/Best"
+import Treats from './Treats'
 
 
 const MainGrid = () => {
@@ -8,6 +9,7 @@ const MainGrid = () => {
     <div>
       <FeaturesProd />
       <Best  />
+      <Treats />
     </div>
   )
 }

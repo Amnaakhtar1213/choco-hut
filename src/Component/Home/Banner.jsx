@@ -1,6 +1,6 @@
 import React from 'react'
 
-import img2 from '../../assets/banner/banner7.png'
+import img2 from '../../assets/banner/ban9.png'
 
 const Banner = () => {
   return (
@@ -9,7 +9,7 @@ const Banner = () => {
   <img
     src={img2}
     alt="Choco-Hut bakery banner"
-    className="block w-full h-auto md:h-[calc(100vh-220px)] md:object-cover"
+    className="block w-full h-auto md:h-[calc(100vh-100px)] md:object-cover"
   />
 </section>
     </div>
