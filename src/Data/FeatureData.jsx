@@ -11,6 +11,7 @@ import MoonCakeIcon from '@iconify-react/fluent-emoji-high-contrast/moon-cake';
 export const featuresData = [
   {
     id: 1,
+    path: "/cake",
     icon: CakeIcon,
     name: "Cakes",
     description: "Rich, creamy cakes made for every celebration.",
@@ -19,7 +20,8 @@ export const featuresData = [
   },
   {
     id: 2,
-    icon: CakeSliceFilledIcon,
+     path: "/pastries",
+    icon:  CakeSliceFilledIcon,
     name: "Pastries",
     description: "Delicate layers with delicious fillings.",
     image: "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
@@ -27,6 +29,7 @@ export const featuresData = [
   },
   {
     id: 3,
+    path: "/cupcake",
     icon: CupcakeDuotoneIcon,
     name: "Cupcakes",
     description: "Little bites of sweetness and happiness.",
@@ -35,6 +38,7 @@ export const featuresData = [
   },
   {
     id: 4,
+    path: "/macarons",
     icon: MoonCakeIcon,
     name: "Macarons",
     description: "Colorful, delicate, and wonderfully delicious.",
@@ -43,6 +47,7 @@ export const featuresData = [
   },
   {
     id: 5,
+    path: "/cookies",
     icon: Cookies32FilledIcon,
     name: "Cookies",
     description: "Crispy edges with soft, chocolatey centers.",
@@ -50,6 +55,7 @@ export const featuresData = [
   },
   {
     id: 6,
+    path: "/dessert",
     icon: FishCakeWithSwirlIcon,
     name: "Brownies & Fudge",
     description: "Rich chocolate indulgence in every bite.",

@@ -1,7 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const BestCard = ({item}) => {
   return (
+    <Link to={item.path} className="block">
    <div className="flex flex-col items-center">
     <div className="px-2 py-1 border-2 border-amber-50 bg-[#A7B48F] text-center rounded-2xl">
       <h1 className="text-[#FDF4EA] text-xl">{item.name}</h1>
@@ -11,6 +13,7 @@ const BestCard = ({item}) => {
      <img src={item.image} alt={item.name} className="w-full h-full object-cover rounded-xl" />
     </div>
    </div>
+   </Link>
   )
 }
 

@@ -1,6 +1,7 @@
 const BestData = [
   {
     id: 1,
+    path: "/cake",
     name: "Chocolate Fudge Tower Cake",
     price: "Rs. 1,800",
     description: "Rich chocolate layers with smooth fudge frosting.",
@@ -8,6 +9,7 @@ const BestData = [
   },
   {
     id: 2,
+    path: "/cupcake",
     name: "Nuts Cupcake",
     price: "Rs. 150",
     description: "A soft red velvet cupcake with creamy frosting.",
@@ -15,6 +17,7 @@ const BestData = [
   },
   {
     id: 3,
+    path: "/cookies",
     name: "Chocolate Chip Cookies",
     price: "Rs. 300",
     description: "Golden cookies filled with chocolate chips.",
@@ -22,6 +25,7 @@ const BestData = [
   },
   {
     id: 4,
+    path: "/pastries",
     name: "Pastries",
     price: "Rs. 400",
     description: "Delicate macarons in a mix of sweet flavors.",
@@ -29,6 +33,7 @@ const BestData = [
   },
   {
     id: 5,
+    path: "/dessert",
     name: "Double Chocolate Brownie",
     price: "Rs. 450",
     description: "A fudgy brownie with rich chocolate chunks.",
@@ -36,6 +41,7 @@ const BestData = [
   },
   {
     id: 6,
+    path: "/macaron",
     name: "Macrones",
     price: "Rs. 400",
     description: "A crisp pastry filled with cream and topped with chocolate.",
@@ -43,6 +49,7 @@ const BestData = [
   },
   {
     id: 7,
+    path: "/dessert",
     name: "SpecialCoffee",
     price: "Rs. 500",
     description: "A crisp pastry filled with cream and topped with chocolate.",
@@ -50,6 +57,7 @@ const BestData = [
   },
   {
     id: 8,
+    path: "/cake",
     name: "Special Fruit Cake",
     price: "Rs. 2000",
     description: "A crisp pastry filled with cream and topped with chocolate.",
