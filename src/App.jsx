@@ -16,6 +16,7 @@ import Nav1 from './Component/Nav1';
 import Nav2 from './Component/Nav2';
 import ChristmassPage from './Pages/ChristmassPage';
 import HalloweenPage from './Pages/HalloweenPage';
+import SavePage from './Pages/SavePage';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
     <ScrollToTop />
-    {/* <NavbarGrid /> */}
+    <NavbarGrid />
     
     <Routes>
       <Route path="/" element={<Home />} />
@@ -34,10 +35,11 @@ function App() {
       <Route path="/macaron" element={<MacaronsPage />} />
       <Route path="/dessert" element={<DessertPage />} />
       <Route path="/pastries" element={<PatriesPage />} />
-      
+
       <Route path="/christmass" element={ <ChristmassPage />} />
       <Route path="/halloween" element={ <HalloweenPage />} />
-    </Routes>
+      <Route path="/save" element={<SavePage />} />
+     </Routes>
   
    
    
