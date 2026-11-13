@@ -17,7 +17,7 @@ const CakeGrid = () => {
       </div>
      <div className="mt-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {cakes.slice(0,4).map((cake) => (
-        <CakeCard key={cake.id} cake={cake}/>
+        <CakeCard key={cake.id} cake={cake} showFavorite={false}/>
       ))}
       </div>
       <div className="mt-6 flex justify-center">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
-const CookiesCard = ({cake}) => {
+const CookiesCard = ({cake, showFavorite = true}) => {
   const {savedItems, toggleSaved}  = useContext(SavedContext)
 
   const isSaved = savedItems.some((savedItems) => savedItems.id === cake.id)
@@ -13,6 +13,7 @@ const CookiesCard = ({cake}) => {
    <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl">
          <div className="relative h-56 overflow-hidden">
         <img src={cake.image} className="h-full w-full object-cover transition-transform duration-500 hover:scale-110" alt={cake.name}/>
+        {showFavorite && ( 
       <button
           type="button"
           onClick={() => toggleSaved(cake)}
@@ -25,6 +26,7 @@ const CookiesCard = ({cake}) => {
             }`}
           />
         </button>
+        )}
       </div>
       <div className="p-4">
         <p className="text-sm font-medium text-amber-900">{cake.category}</p>

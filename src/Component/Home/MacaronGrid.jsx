@@ -11,7 +11,7 @@ const MacaronGrid = () => {
          </div>
         <div className="mt-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
          {macarons.slice(0,4).map((cake) => (
-           <MacaronCard key={cake.id} cake={cake}/>
+           <MacaronCard key={cake.id} cake={cake} showFavorite={false}/>
          ))}
          </div>
          <div className="mt-6 flex justify-center">

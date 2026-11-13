@@ -11,7 +11,7 @@ const ProductCard = ({item}) => {
    {Icon && <Icon width={32} height={32} className="self-center text-[#5f2b06] shrink-0" />}
     <h1 className="text-xl font-bold text-[#5f2b06]">{item.name}</h1>
     <p className="text-[#7f9359] tracking-wide">{item.description}</p>
-    
+
    </div>
 </div>
 </Link>
