@@ -21,7 +21,7 @@ const HalloweenGrid = () => {
 </div>
          <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 px-5 md:px-20 pb-10 pt-10">
           {Halloween.map((item) => (
-            <HalloweenCard key={item.id} item={item} />
+            <HalloweenCard key={item.id} item={item} showFavorite={false}/>
           ))}
         </div>
     </section>

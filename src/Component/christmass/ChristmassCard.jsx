@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import SavedContext from '../../Context/SavedContext'
 
-const ChristmassCard = ({item}) => {
+const ChristmassCard = ({item, showFavorite = true}) => {
+ const {savedItems, toggleSaved}  = useContext(SavedContext)
+
+  const isSaved = savedItems.some((savedItems) => savedItems.id === item.id)
   return (
    <Link to="/christmass" className="block">
       <article className="group overflow-hidden rounded-3xl border border-red-200 bg-[#eed1d1] shadow-lg shadow-red-950/10 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-950/20">
@@ -12,6 +17,20 @@ const ChristmassCard = ({item}) => {
           alt={item.name}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
         />
+         {showFavorite && ( 
+      <button
+          type="button"
+          onClick={() => toggleSaved(item)}
+          aria-label={isSaved ? "Remove from saved items" : "Save item"}
+          className="absolute right-3 top-3 grid"
+        >
+          <i
+            className={`fa-heart text-lg ${
+              isSaved ? "fa-solid text-red-700" : "fa-regular text-red-700"
+            }`}
+          />
+        </button>
+        )}
 
         <span className="absolute left-4 top-4 rounded-full bg-red-700 px-4 py-1.5 text-sm font-semibold text-white shadow">
           {item.category}
@@ -23,7 +42,7 @@ const ChristmassCard = ({item}) => {
           </span>
         )}
 
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-12">
+        <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/70 to-transparent p-4 pt-12">
           <p className="text-sm font-medium text-white">
             ★ {item.rating} <span className="text-white/80">({item.reviewCount} reviews)</span>
           </p>
