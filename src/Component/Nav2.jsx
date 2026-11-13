@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { NavLink } from "react-router-dom";
  
-import img2 from "../assets/Features/Hutlogo.png"
+import img13 from "../assets/Features/Hutlogo.png"
 
 const Nav2 = () => {
  const [menuOpen, setMenuOpen] = useState(false)
@@ -18,7 +18,7 @@ const Nav2 = () => {
           </div> */}
 
  <div className="md:hidden flex items-center">
-            <img src={img2} alt="logo" className="w-70 h-30 object-cover"/>
+            <img src={img13} alt="logo" className="w-70 h-30 object-cover"/>
           </div>
           
 

@@ -1,6 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
+import SavedContext from '../../Context/SavedContext'
 
 const SaveCard = ({item}) => {
+  const {savedItems, toggleSaved}  = useContext(SavedContext)
+  
+    const isSaved = savedItems.some((savedItems) => savedItems.id === item.id)
+
   return (
     <div>
       <article className="group overflow-hidden rounded-3xl border border-red-200 bg-[#eed1d1] shadow-lg shadow-red-950/10 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-950/20">
@@ -11,6 +17,18 @@ const SaveCard = ({item}) => {
           alt={item.name}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
         />
+        <button
+          type="button"
+          onClick={() => toggleSaved(item)}
+          aria-label={isSaved ? "Remove from saved items" : "Save item"}
+          className="absolute right-3 top-3 grid"
+        >
+          <i
+            className={`fa-heart text-lg ${
+              isSaved ? "fa-solid text-[#efa2a2]" : "fa-regular text-[#efa2a2]"
+            }`}
+          />
+        </button>
 
         <span className="absolute left-4 top-4 rounded-full bg-red-700 px-4 py-1.5 text-sm font-semibold text-white shadow">
           {item.category}

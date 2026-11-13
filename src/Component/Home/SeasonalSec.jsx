@@ -2,14 +2,14 @@ import React from 'react'
 
 import HalloweenSec from '../Home/HalloweenSec'
 import Christmass from './ChristmassSec'
-import img13 from "../../assets/Features/bg2.jpg"
+import img7 from "../../assets/Features/bg2.jpg"
 
 const SeasonalSec = () => {
   return (
 <>
   <div className="relative flex w-full flex-col items-center overflow-hidden py-10">
     <img
-      src={img13}
+      src={img7}
       alt=""
       className="absolute inset-0 h-full w-full object-cover blur-lg"
     />

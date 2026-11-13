@@ -1,6 +1,6 @@
 const PastryData = [
   {
-    id: 113,
+    id: 170,
     path: "/pastries",
     name: "Chocolate Croissant",
     category: "Chocolate",
@@ -15,7 +15,7 @@ const PastryData = [
     tags: ["Chocolate", "Bestseller"],
   },
    {
-    id: 131,
+    id: 171,
     path: "/pastries",
     name: "Strawberry Cream Éclair",
     category: "Fruit",
@@ -31,7 +31,7 @@ const PastryData = [
   },
    
   {
-    id: 132,
+    id: 172,
     path: "/pastries",
     name: "Double Chocolate Danish",
     category: "Chocolate",
@@ -46,7 +46,7 @@ const PastryData = [
     tags: ["Chocolate", "Bestseller"],
   },
     {
-    id: 115,
+    id: 173,
     path: "/pastries",
     name: "Apple Turnover",
     category: "Fruit",
@@ -61,7 +61,7 @@ const PastryData = [
     tags: ["Apple", "Classic"],
   },
    {
-    id: 123,
+    id: 174,
     path: "/pastries",
     name: "choclate cake slice",
     category: "Classic",
@@ -78,7 +78,7 @@ const PastryData = [
 
 
   {
-    id: 116,
+    id: 175,
     path: "/pastries",
     name: "Strawberry slice cake",
     category: "Fruit",
@@ -93,7 +93,7 @@ const PastryData = [
     tags: ["Strawberry", "Fruit"],
   },
   {
-    id: 117,
+    id: 176,
     path: "/pastries",
     name: "Chocolate Éclair",
     category: "Chocolate",
@@ -108,7 +108,7 @@ const PastryData = [
     tags: ["Chocolate", "Bestseller"],
   },
     {
-    id: 114,
+    id: 177,
     path: "/pastries",
     name: "Strawberry Croissant",
     category: "Almond",
@@ -123,7 +123,7 @@ const PastryData = [
     tags: ["Almond", "Popular"],
   },
   {
-    id: 118,
+    id: 178,
     path: "/pastries",
     name: "Vanilla Cream Puff",
     category: "Cream",
@@ -138,7 +138,7 @@ const PastryData = [
     tags: ["Vanilla", "Cream"],
   },
   {
-    id: 119,
+    id: 179,
     path: "/pastries",
     name: "Blueberry Danish",
     category: "Fruit",
@@ -153,7 +153,7 @@ const PastryData = [
     tags: ["Blueberry", "Fruit"],
   },
   {
-    id: 120,
+    id: 180,
     path: "/pastries",
     name: "Cinnamon Roll",
     category: "Cinnamon",
@@ -168,7 +168,7 @@ const PastryData = [
     tags: ["Cinnamon", "Bestseller"],
   },
   {
-    id: 121,
+    id: 181,
     path: "/pastries",
     name: "Lemon Tart",
     category: "Citrus",
@@ -183,7 +183,7 @@ const PastryData = [
     tags: ["Lemon", "Tart"],
   },
   {
-    id: 122,
+    id: 182,
     path: "/pastries",
     name: "Cherry Turnover",
     category: "Fruit",
@@ -199,7 +199,7 @@ const PastryData = [
   },
  
   {
-    id: 124,
+    id: 183,
     path: "/pastries",
     name: "Custard Tart",
     category: "Cream",
@@ -214,7 +214,7 @@ const PastryData = [
     tags: ["Custard", "Classic"],
   },
   {
-    id: 125,
+    id: 184,
     path: "/pastries",
     name: "Raspberry Turnover",
     category: "Fruit",
@@ -229,7 +229,7 @@ const PastryData = [
     tags: ["Raspberry", "Fruit"],
   },
   {
-    id: 126,
+    id: 185,
     path: "/pastries",
     name: "nuts cake slice",
     category: "Nut",
@@ -244,7 +244,7 @@ const PastryData = [
     tags: ["Pecan", "Nutty"],
   },
   {
-    id: 127,
+    id: 186,
     path: "/pastries",
     name: "Chocolate donuts",
     category: "Chocolate",
@@ -259,7 +259,7 @@ const PastryData = [
     tags: ["Chocolate", "Crispy"],
   },
   {
-    id: 128,
+    id: 187,
     path: "/pastries",
     name: "Vanilla Cream bun",
     category: "Cream",
@@ -274,7 +274,7 @@ const PastryData = [
     tags: ["Vanilla", "Cream"],
   },
   {
-    id: 129,
+    id: 188,
     path: "/pastries",
     name: "Mini Fruit Tart",
     category: "Fruit",
@@ -289,7 +289,7 @@ const PastryData = [
     tags: ["Fruit", "Tart"],
   },
   {
-    id: 130,
+    id: 189,
     path: "/pastries",
     name: "Cinnamon Apple Danish",
     category: "Cinnamon",

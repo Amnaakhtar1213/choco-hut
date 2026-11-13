@@ -1,6 +1,6 @@
 import React from 'react'
 import HalloweenCard from './HalloweenCard'
-import img101 from '../../assets/hero/hallow2.png'
+import img9 from '../../assets/hero/hallow2.png'
 import Halloween from '../../Data/Halloween'
 import Nav2 from '../Nav2'
 const HalloweenGrid = () => {
@@ -9,7 +9,7 @@ const HalloweenGrid = () => {
       <Nav2 />
     <div className="mx-auto mb-8 mt-4 max-w-7xl overflow-hidden rounded-3xl border-4 border-orange-200 shadow-lg shadow-orange-950/10">
   <img
-    src={img101}
+    src={img9}
     alt="Halloween treats"
     className="h-48 w-full object-cover sm:h-64 md:h-80"
   />

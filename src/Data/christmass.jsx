@@ -1,6 +1,6 @@
 const ChristmasData = [
   {
-    id: 133,
+    id: 42,
     path: "/christmass",
     name: "Christmas Fruit Cake",
     category: "Cake",
@@ -15,7 +15,7 @@ const ChristmasData = [
     tags: ["Christmas", "Fruit Cake", "Bestseller"],
   },
   {
-    id: 134,
+    id: 43,
     path: "/christmass",
     name: "Gingerbread Christmas Cake",
     category: "Cake",
@@ -30,7 +30,7 @@ const ChristmasData = [
     tags: ["Christmas", "Gingerbread", "Spiced"],
   },
   {
-    id: 135,
+    id: 44,
     path: "/christmass",
     name: "Red Velvet Christmas Cake",
     category: "Cake",
@@ -45,7 +45,7 @@ const ChristmasData = [
     tags: ["Christmas", "Red Velvet", "Popular"],
   },
   {
-    id: 136,
+    id: 45,
     path: "/christmass",
     name: "Chocolate Yule Log",
     category: "Cake",
@@ -60,7 +60,7 @@ const ChristmasData = [
     tags: ["Christmas", "Chocolate", "Bestseller"],
   },
   {
-    id: 137,
+    id: 46,
     path: "/christmass",
     name: "Snowflake Vanilla Cake",
     category: "Cake",
@@ -75,7 +75,7 @@ const ChristmasData = [
     tags: ["Christmas", "Vanilla", "Winter"],
   },
   {
-    id: 138,
+    id: 47,
     path: "/christmass",
     name: "Christmas Tree Cupcake",
     category: "Cupcake",
@@ -90,7 +90,7 @@ const ChristmasData = [
     tags: ["Christmas", "Vanilla", "Festive"],
   },
   {
-    id: 139,
+    id: 48,
     path: "/christmass",
     name: "Gingerbread Cupcake",
     category: "Cupcake",
@@ -105,7 +105,7 @@ const ChristmasData = [
     tags: ["Christmas", "Gingerbread", "Spiced"],
   },
   {
-    id: 140,
+    id: 49,
     path: "/christmass",
     name: "Peppermint Chocolate Cupcake",
     category: "Cupcake",
@@ -120,7 +120,7 @@ const ChristmasData = [
     tags: ["Christmas", "Chocolate", "Peppermint"],
   },
   {
-    id: 141,
+    id: 50,
     path: "/christmass",
     name: "Red Velvet Holiday Cupcake",
     category: "Cupcake",
@@ -135,7 +135,7 @@ const ChristmasData = [
     tags: ["Christmas", "Red Velvet", "Popular"],
   },
   {
-    id: 142,
+    id: 51,
     path: "/christmass",
     name: "Reindeer Chocolate Cupcake",
     category: "Cupcake",
@@ -150,7 +150,7 @@ const ChristmasData = [
     tags: ["Christmas", "Chocolate", "Kids' Favorite"],
   },
   {
-    id: 143,
+    id: 52,
     path: "/christmass",
     name: "Decorated Gingerbread Cookies",
     category: "Cookie",
@@ -165,7 +165,7 @@ const ChristmasData = [
     tags: ["Christmas", "Gingerbread", "Bestseller"],
   },
   {
-    id: 144,
+    id: 53,
     path: "/christmass",
     name: "Christmas Sugar Cookies",
     category: "Cookie",
@@ -180,7 +180,7 @@ const ChristmasData = [
     tags: ["Christmas", "Sugar Cookie", "Decorated"],
   },
   {
-    id: 145,
+    id: 54,
     path: "/christmass",
     name: "Peppermint Chocolate Cookies",
     category: "Cookie",
@@ -195,7 +195,7 @@ const ChristmasData = [
     tags: ["Christmas", "Chocolate", "Peppermint"],
   },
   {
-    id: 146,
+    id: 55,
     path: "/christmass",
     name: "Snowball Cookies",
     category: "Cookie",
@@ -210,7 +210,7 @@ const ChristmasData = [
     tags: ["Christmas", "Classic", "Powdered Sugar"],
   },
   {
-    id: 147,
+    id: 56,
     path: "/christmass",
     name: "Cranberry White Chocolate Cookies",
     category: "Cookie",

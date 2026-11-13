@@ -1,6 +1,6 @@
 const BestData = [
   {
-    id: 1,
+    id: 15,
     path: "/cake",
     name: "Chocolate Fudge Tower Cake",
     price: "Rs. 1,800",
@@ -8,7 +8,7 @@ const BestData = [
     image: "https://images.unsplash.com/photo-1549572189-dddb1adf739b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 2,
+    id: 16,
     path: "/cupcake",
     name: "Nuts Cupcake",
     price: "Rs. 150",
@@ -16,7 +16,7 @@ const BestData = [
     image: "https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 3,
+    id: 17,
     path: "/cookies",
     name: "Chocolate Chip Cookies",
     price: "Rs. 300",
@@ -24,7 +24,7 @@ const BestData = [
     image: "https://plus.unsplash.com/premium_photo-1668862483214-30aa4f8e915f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 4,
+    id: 18,
     path: "/pastries",
     name: "Pastries",
     price: "Rs. 400",
@@ -32,7 +32,7 @@ const BestData = [
     image: "https://images.unsplash.com/photo-1700448293876-07dca826c161?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 5,
+    id: 19,
     path: "/dessert",
     name: "Double Chocolate Brownie",
     price: "Rs. 450",
@@ -40,7 +40,7 @@ const BestData = [
     image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 6,
+    id: 20,
     path: "/macaron",
     name: "Macrones",
     price: "Rs. 400",
@@ -48,7 +48,7 @@ const BestData = [
     image: "https://plus.unsplash.com/premium_photo-1670603797316-84effb6f623f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 7,
+    id: 21,
     path: "/dessert",
     name: "SpecialCoffee",
     price: "Rs. 500",
@@ -56,7 +56,7 @@ const BestData = [
     image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
   },
   {
-    id: 8,
+    id: 22,
     path: "/cake",
     name: "Special Fruit Cake",
     price: "Rs. 2000",

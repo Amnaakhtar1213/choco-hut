@@ -1,13 +1,13 @@
 import React from 'react'
 
-import img2 from '../../assets/banner/ban9.png'
+import img1 from '../../assets/banner/ban9.png'
 
 const Banner = () => {
   return (
     <div>
       <section className="w-full overflow-hidden">
   <img
-    src={img2}
+    src={img1}
     alt="Choco-Hut bakery banner"
     className="block w-full h-auto md:h-[calc(100vh-100px)] md:object-cover"
   />

@@ -10,7 +10,7 @@ import MoonCakeIcon from '@iconify-react/fluent-emoji-high-contrast/moon-cake';
 
 export const featuresData = [
   {
-    id: 1,
+    id: 129,
     path: "/cake",
     icon: CakeIcon,
     name: "Cakes",
@@ -19,7 +19,7 @@ export const featuresData = [
     
   },
   {
-    id: 2,
+    id: 130,
      path: "/pastries",
     icon:  CakeSliceFilledIcon,
     name: "Pastries",
@@ -28,7 +28,7 @@ export const featuresData = [
     
   },
   {
-    id: 3,
+    id: 131,
     path: "/cupcake",
     icon: CupcakeDuotoneIcon,
     name: "Cupcakes",
@@ -37,7 +37,7 @@ export const featuresData = [
     
   },
   {
-    id: 4,
+    id: 132,
     path: "/macarons",
     icon: MoonCakeIcon,
     name: "Macarons",
@@ -46,7 +46,7 @@ export const featuresData = [
     
   },
   {
-    id: 5,
+    id: 133,
     path: "/cookies",
     icon: Cookies32FilledIcon,
     name: "Cookies",
@@ -54,7 +54,7 @@ export const featuresData = [
     image: "https://images.unsplash.com/photo-1767339300211-00be83435c63?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
-    id: 6,
+    id: 134,
     path: "/dessert",
     icon: FishCakeWithSwirlIcon,
     name: "Brownies & Fudge",

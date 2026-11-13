@@ -1,13 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import SavedContext from '../../Context/SavedContext'
 
 const CookiesCard = ({cake}) => {
+  const {savedItems, toggleSaved}  = useContext(SavedContext)
+
+  const isSaved = savedItems.some((savedItems) => savedItems.id === cake.id)
+   
   return (
     <Link to="/cookies" className="block">
    <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl">
          <div className="relative h-56 overflow-hidden">
         <img src={cake.image} className="h-full w-full object-cover transition-transform duration-500 hover:scale-110" alt={cake.name}/>
-        <button className="absolute right-3 top-3 grid "><i className="fa-solid fa-heart text-lg text-[#efa2a2]"></i></button>
+      <button
+          type="button"
+          onClick={() => toggleSaved(cake)}
+          aria-label={isSaved ? "Remove from saved items" : "Save item"}
+          className="absolute right-3 top-3 grid"
+        >
+          <i
+            className={`fa-heart text-lg ${
+              isSaved ? "fa-solid text-[#efa2a2]" : "fa-regular text-[#efa2a2]"
+            }`}
+          />
+        </button>
       </div>
       <div className="p-4">
         <p className="text-sm font-medium text-amber-900">{cake.category}</p>

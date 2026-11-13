@@ -1,6 +1,6 @@
 const Halloween = [
   {
-    id: 148,
+    id: 135,
     name: "Pumpkin Spice Halloween Cake",
     category: "Cake",
     price: 28.0,
@@ -14,7 +14,7 @@ const Halloween = [
     tags: ["Halloween", "Pumpkin", "Bestseller"],
   },
   {
-    id: 149,
+    id: 136,
     name: "Dark Chocolate Spiderweb CupCake",
     category: "Cake",
     price: 30.0,
@@ -28,7 +28,7 @@ const Halloween = [
     tags: ["Halloween", "Chocolate", "Spiderweb"],
   },
   {
-    id: 150,
+    id: 137,
     name: "Black Velvet Halloween Cake",
     category: "Cake",
     price: 29.0,
@@ -42,7 +42,7 @@ const Halloween = [
     tags: ["Halloween", "Black Velvet", "Festive"],
   },
   {
-    id: 151,
+    id: 138,
     name: "Halloween treats",
     category: "Cake",
     price: 27.0,
@@ -56,7 +56,7 @@ const Halloween = [
     tags: ["Halloween", "Apple", "Caramel"],
   },
   {
-    id: 152,
+    id: 139,
     name: "Haunted House Cake",
     category: "Cake",
     price: 34.0,
@@ -70,7 +70,7 @@ const Halloween = [
     tags: ["Halloween", "Chocolate", "Decorated"],
   },
   {
-    id: 153,
+    id: 140,
     name: "Pumpkin Patch Cupcake",
     category: "Cupcake",
     price: 4.5,
@@ -84,7 +84,7 @@ const Halloween = [
     tags: ["Halloween", "Pumpkin", "Festive"],
   },
   {
-    id: 154,
+    id: 141,
     name: "Ghost Vanilla Cupcake",
     category: "Cupcake",
     price: 4.0,
@@ -98,7 +98,7 @@ const Halloween = [
     tags: ["Halloween", "Vanilla", "Ghost"],
   },
   {
-    id: 155,
+    id: 142,
     name: "Witch's Brew Chocolate Cupcake",
     category: "Cupcake",
     price: 4.5,
@@ -112,7 +112,7 @@ const Halloween = [
     tags: ["Halloween", "Chocolate", "Witch"],
   },
   {
-    id: 156,
+    id: 143,
     name: "Candy Corn Cupcake",
     category: "Cupcake",
     price: 4.0,
@@ -126,7 +126,7 @@ const Halloween = [
     tags: ["Halloween", "Candy Corn", "Vanilla"],
   },
   {
-    id: 157,
+    id: 144,
     name: " Chocolate Cupcake",
     category: "Cupcake",
     price: 4.5,
@@ -140,7 +140,7 @@ const Halloween = [
     tags: ["Halloween", "Chocolate", "Mummy"],
   },
   {
-    id: 158,
+    id: 145,
     name: "Jack-o'-Lantern Sugar Cookies",
     category: "Cookie",
     price: 3.5,
@@ -154,7 +154,7 @@ const Halloween = [
     tags: ["Halloween", "Pumpkin", "Decorated"],
   },
   {
-    id: 159,
+    id: 146,
     name: "Spiderweb Chocolate Cookies",
     category: "Cookie",
     price: 3.5,
@@ -168,7 +168,7 @@ const Halloween = [
     tags: ["Halloween", "Chocolate", "Spiderweb"],
   },
   {
-    id: 160,
+    id: 147,
     name: "Monster Eye Cookies",
     category: "Cookie",
     price: 3.0,
@@ -182,7 +182,7 @@ const Halloween = [
     tags: ["Halloween", "Monster", "Kids' Favorite"],
   },
   {
-    id: 161,
+    id: 148,
     name: "Witch Hat Cookies",
     category: "Cookie",
     price: 3.5,
@@ -196,7 +196,7 @@ const Halloween = [
     tags: ["Halloween", "Chocolate", "Witch"],
   },
   {
-    id: 162,
+    id: 149,
     name: "Caramel Pumpkin Cookies",
     category: "Cookie",
     price: 3.5,

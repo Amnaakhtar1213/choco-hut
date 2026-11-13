@@ -1,20 +1,30 @@
 import React from 'react'
+import { useContext } from 'react'
+import SavedContext from '../Context/SavedContext'
 import SaveCard from '../Component/save/SaveCard'
-import { Link } from 'react-router-dom'
+
 
 const SavePage = () => {
+  const {savedItems} = useContext(SavedContext)
   return (
-    <Link to="/save" className="block">
-      <div className="bg-[#8B4513]">
-         <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-[#A7B48F] font-bold text-3xl mt-4">MY FAVORITES</h1>
+    <div className="bg-amber-900 p-10 min-h-screen">
+      <div className="flex flex-col items-center justify-center ">
+        <h1 className="text-amber-50 text-3xl font-bold"> My Favorites </h1>
         <p className="text-[#A7B48F] mt-2">Your favorite sweets, all in one place.</p>
       </div>
-      <div>
-        <SaveCard />
-      </div>
-      </div>
-    </Link>
+
+      {savedItems.length === 0 ? (
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <p className="text-amber-50 text-center text-xl">  You haven’t saved any treats yet.</p>
+          </div>
+      ) : (
+           <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2 lg:grid-cols-4">
+          {savedItems.map((item) => (
+            <SaveCard key={item.id} item={item} />
+          ))}
+        </div>
+      )}
+    </div>       
   )
 }
 

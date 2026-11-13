@@ -1,12 +1,12 @@
 
-import img5 from "../../assets/banner/banner5.jpg"
+import img2 from "../../assets/banner/banner5.jpg"
 import BestCard from './BestCard'
 import BestData from '../../Data/BestData'
 const Best = () => {
   return (
     
       <div className="relative w-full min-h-screen overflow-hidden pb-60">
-      <img src={img5} className="absolute inset-0 w-full h-full  object-cover blur-2xl scale-110"/>
+      <img src={img2} className="absolute inset-0 w-full h-full  object-cover blur-2xl scale-110"/>
        <div className="absolute top-6 flex flex-col items-center w-full text-white text-center">
          <h1 className="text-3xl text-[#FDF4EA]">
           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
@@ -18,7 +18,7 @@ const Best = () => {
           <h1 className="text-4xl text-[#A7B48F]">Our Best Sellers</h1>
         <p className="text-[#FDF4EA] text-lg mt-2">The treats everyone loves, made fresh with a little extra sweetness.</p>
        </div>
-       <div className="relative top-60  md:top-40 grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-14 px-10  w-full ">
+       <div className="relative top-60  md:top-40 grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-14 px-14  w-full ">
          {BestData.map((item) => (
          <BestCard key={item.id} item={item} />
       ))}

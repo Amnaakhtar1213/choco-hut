@@ -1,6 +1,6 @@
 const desserts = [
   {
-    id: 81,
+    id: 97,
     name: "Classic Tiramisu",
     category: "Tiramisu",
     price: 6.5,
@@ -14,7 +14,7 @@ const desserts = [
     tags: ["Tiramisu", "Coffee", "Classic"],
   },
    {
-    id: 90,
+    id: 98,
     name: "Chocolate Hazelnut Fudge",
     category: "Fudge",
     price: 4.5,
@@ -28,7 +28,7 @@ const desserts = [
     tags: ["Fudge", "Chocolate", "Hazelnut"],
   },
   {
-    id: 91,
+    id: 99,
     name: "Espresso Brownie",
     category: "Brownies",
     price: 4,
@@ -42,7 +42,7 @@ const desserts = [
     tags: ["Brownie", "Coffee", "Chocolate"],
   },
    {
-    id: 83,
+    id: 100,
     name: "Classic Cold coffee",
     category: "Coffee",
     price: 4.25,
@@ -56,7 +56,7 @@ const desserts = [
     tags: ["Coffee", "Flat white"],
   },
   {
-    id: 82,
+    id: 101,
     name: "Double Chocolate Fudge",
     category: "Fudge",
     price: 4,
@@ -71,7 +71,7 @@ const desserts = [
   },
   
   {
-    id: 84,
+    id: 102,
     name: "Classic Fudgy Brownie",
     category: "Brownies",
     price: 3.75,
@@ -85,7 +85,7 @@ const desserts = [
     tags: ["Brownie", "Chocolate", "Bestseller"],
   },
   {
-    id: 85,
+    id: 103,
     name: "Caramel Latte",
     category: "Coffee",
     price: 4.75,
@@ -99,7 +99,7 @@ const desserts = [
     tags: ["Coffee", "Latte", "Caramel"],
   },
   {
-    id: 86,
+    id: 104,
     name: "Strawberry Tiramisu",
     category: "Tiramisu",
     price: 7,
@@ -113,7 +113,7 @@ const desserts = [
     tags: ["Tiramisu", "Strawberry", "Fruit"],
   },
   {
-    id: 87,
+    id: 105,
     name: " Chocolate caramel Fudge",
     category: "Fudge",
     price: 4.25,
@@ -127,7 +127,7 @@ const desserts = [
     tags: ["Fudge", "Chocolate", "Sweet and salty"],
   },
   {
-    id: 88,
+    id: 106,
     name: "Walnut Brownie",
     category: "Brownies",
     price: 4.25,
@@ -141,7 +141,7 @@ const desserts = [
     tags: ["Brownie", "Walnut"],
   },
   {
-    id: 89,
+    id: 107,
     name: "Vanilla Cappuccino",
     category: "Coffee",
     price: 4.5,
@@ -156,7 +156,7 @@ const desserts = [
   },
  
   {
-    id: 92,
+    id: 108,
     name: "Classic Americano",
     category: "Coffee",
     price: 3.25,
@@ -170,7 +170,7 @@ const desserts = [
     tags: ["Coffee", "Americano"],
   },
   {
-    id: 93,
+    id: 109,
     name: " Chocolate Fudge",
     category: "Fudge",
     price: 4.25,
@@ -184,7 +184,7 @@ const desserts = [
     tags: ["Fudge", "White chocolate"],
   },
   {
-    id: 94,
+    id: 110,
     name: "Raspberry Cheesecake Brownie",
     category: "Brownies",
     price: 4.75,
@@ -198,7 +198,7 @@ const desserts = [
     tags: ["Brownie", "Raspberry", "Cheesecake"],
   },
    {
-    id: 95,
+    id: 111,
     name: "Classic Flat White",
     category: "Coffee",
     price: 4.25,
@@ -212,7 +212,7 @@ const desserts = [
     tags: ["Coffee", "Flat white"],
   },
   {
-    id: 96,
+    id: 112,
     name: " Tiramisu Cup",
     category: "Tiramisu",
     price: 6,
@@ -227,7 +227,7 @@ const desserts = [
   },
  
   {
-    id: 97,
+    id: 113,
     name: "Cookies and Cream Fudge",
     category: "Fudge",
     price: 4.5,
@@ -241,7 +241,7 @@ const desserts = [
     tags: ["Fudge", "Cookies and cream"],
   },
   {
-    id: 98,
+    id:114,
     name: "Blondie Brownie",
     category: "Brownies",
     price: 3.75,
@@ -255,7 +255,7 @@ const desserts = [
     tags: ["Brownie", "Blondie"],
   },
   {
-    id: 99,
+    id: 115,
     name: "Iced Mocha",
     category: "Coffee",
     price: 4.75,
@@ -269,7 +269,7 @@ const desserts = [
     tags: ["Coffee", "Iced", "Chocolate"],
   },
   {
-    id: 100,
+    id: 116,
     name: "Biscoff Brownie",
     category: "Brownies",
     price: 4.5,
@@ -283,7 +283,7 @@ const desserts = [
     tags: ["Brownie", "Biscoff", "Chocolate"],
   },
   {
-    id: 101,
+    id: 117,
     name: "Pistachio Tiramisu",
     category: "Tiramisu",
     price: 7.5,
@@ -297,7 +297,7 @@ const desserts = [
     tags: ["Tiramisu", "Pistachio"],
   },
   {
-    id: 102,
+    id: 118,
     name: "Dark Chocolate Orange Fudge",
     category: "Fudge",
     price: 4.25,
@@ -311,7 +311,7 @@ const desserts = [
     tags: ["Fudge", "Chocolate", "Orange"],
   },
   {
-    id: 103,
+    id: 119,
     name: "Hazelnut Brownie",
     category: "Brownies",
     price: 4.25,
@@ -325,7 +325,7 @@ const desserts = [
     tags: ["Brownie", "Hazelnut"],
   },
   {
-    id: 104,
+    id: 120,
     name: "Iced Caramel Latte",
     category: "Coffee",
     price: 4.75,
@@ -339,7 +339,7 @@ const desserts = [
     tags: ["Coffee", "Iced", "Caramel"],
   },
   {
-    id: 105,
+    id: 121,
     name: "Lemon Tiramisu",
     category: "Tiramisu",
     price: 6.75,
@@ -353,7 +353,7 @@ const desserts = [
     tags: ["Tiramisu", "Lemon", "Citrus"],
   },
   {
-    id: 106,
+    id: 122,
     name: "Peanut Butter Swirl Brownie",
     category: "Brownies",
     price: 4.5,
@@ -367,7 +367,7 @@ const desserts = [
     tags: ["Brownie", "Chocolate", "Peanut butter"],
   },
   {
-    id: 107,
+    id: 123,
     name: "Hazelnut Mocha",
     category: "Coffee",
     price: 5,
@@ -381,7 +381,7 @@ const desserts = [
     tags: ["Coffee", "Mocha", "Hazelnut"],
   },
   {
-    id: 108,
+    id: 124,
     name: "Maple Walnut Fudge",
     category: "Fudge",
     price: 4.5,
@@ -395,7 +395,7 @@ const desserts = [
     tags: ["Fudge", "Maple", "Walnut"],
   },
   {
-    id: 109,
+    id: 125,
     name: "Tiramisu Brownie",
     category: "Brownies",
     price: 4.75,
@@ -409,7 +409,7 @@ const desserts = [
     tags: ["Brownie", "Tiramisu", "Coffee"],
   },
   {
-    id: 110,
+    id: 126,
     name: " Macha latte",
     category: "Coffee",
     price: 4.75,
@@ -423,7 +423,7 @@ const desserts = [
     tags: ["Coffee", "Iced", "Chocolate"],
   },
   {
-    id: 111,
+    id: 127,
     name: "White Chocolate Raspberry Fudge",
     category: "Fudge",
     price: 4.5,
@@ -437,7 +437,7 @@ const desserts = [
     tags: ["Fudge", "Raspberry", "White chocolate"],
   },
   {
-    id: 112,
+    id: 128,
     name: "Cinnamon Dolce Latte",
     category: "Coffee",
     price: 4.75,

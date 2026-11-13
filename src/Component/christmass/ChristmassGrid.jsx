@@ -1,7 +1,7 @@
 import React from 'react'
 import ChristmasData from '../../Data/christmass'
 import ChristmassCard from './ChristmassCard'
-import img100 from "../../assets/hero/merry2.png"
+import img11 from "../../assets/hero/merry2.png"
 import Nav2 from '../Nav2'
 import ChristmassHeader from './ChristmassHeader'
 
@@ -11,7 +11,7 @@ const ChristmassGrid = () => {
       <Nav2 />
      <div className="mx-auto mb-8 max-w-7xl overflow-hidden rounded-3xl mt-4">
   <img
-    src={img100}
+    src={img11}
     alt="Christmas treats"
     className="h-48 w-full object-cover sm:h-64 md:h-80"
   />

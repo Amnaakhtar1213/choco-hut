@@ -20,7 +20,7 @@ import SavePage from './Pages/SavePage';
 
 
 function App() {
-
+localStorage.clear()
 
   return (
     <>

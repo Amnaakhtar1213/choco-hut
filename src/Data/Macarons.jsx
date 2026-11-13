@@ -1,6 +1,6 @@
 const macarons = [
   {
-    id: 61,
+    id: 150,
     name: "Classic Vanilla Macaron",
     category: "Vanilla",
     price: 2.5,
@@ -14,7 +14,7 @@ const macarons = [
     tags: ["Vanilla", "Classic"],
   },
   {
-    id: 62,
+    id: 151,
     name: "Dark Chocolate Macaron",
     category: "Chocolate",
     price: 2.75,
@@ -28,7 +28,7 @@ const macarons = [
     tags: ["Chocolate", "Bestseller"],
   },
   {
-    id: 71,
+    id: 152,
     name: "Espresso Macaron",
     category: "Coffee",
     price: 2.75,
@@ -42,7 +42,7 @@ const macarons = [
     tags: ["Coffee", "Espresso"],
   },
 {
-    id: 76,
+    id: 153,
     name: "Blackcurrant Macaron",
     category: "Fruit",
     price: 2.75,
@@ -56,7 +56,7 @@ const macarons = [
     tags: ["Blackcurrant", "Fruit"],
   },
   {
-    id: 63,
+    id: 154,
     name: "Raspberry Macaron",
     category: "Fruit",
     price: 2.75,
@@ -70,7 +70,7 @@ const macarons = [
     tags: ["Raspberry", "Fruit"],
   },
   {
-    id: 64,
+    id: 155,
     name: "Pistachio Macaron",
     category: "Nut",
     price: 3,
@@ -85,7 +85,7 @@ const macarons = [
   },
   
   {
-    id: 66,
+    id: 156,
     name: "Salted Caramel Macaron",
     category: "Caramel",
     price: 2.75,
@@ -99,7 +99,7 @@ const macarons = [
     tags: ["Caramel", "Sweet and salty"],
   },
   {
-    id: 67,
+    id: 157,
     name: "Strawberry Macaron",
     category: "Fruit",
     price: 2.75,
@@ -113,7 +113,7 @@ const macarons = [
     tags: ["Strawberry", "Fruit"],
   },
   {
-    id: 68,
+    id: 158,
     name: "Cookies and Cream Macaron",
     category: "Chocolate",
     price: 2.75,
@@ -127,7 +127,7 @@ const macarons = [
     tags: ["Chocolate", "Cookies and cream"],
   },
   {
-    id: 69,
+    id: 159,
     name: "Blueberry Macaron",
     category: "Fruit",
     price: 2.75,
@@ -141,7 +141,7 @@ const macarons = [
     tags: ["Blueberry", "Fruit"],
   },
   {
-    id: 70,
+    id: 160,
     name: "Rose Macaron",
     category: "Floral",
     price: 3,
@@ -156,7 +156,7 @@ const macarons = [
   },
   
   {
-    id: 72,
+    id: 161,
     name: "Mango Macaron",
     category: "Tropical",
     price: 2.75,
@@ -170,7 +170,7 @@ const macarons = [
     tags: ["Mango", "Tropical"],
   },
   {
-    id: 73,
+    id: 162,
     name: "Matcha Macaron",
     category: "Tea",
     price: 3,
@@ -184,7 +184,7 @@ const macarons = [
     tags: ["Matcha", "Tea"],
   },
   {
-    id: 74,
+    id: 163,
     name: "Orange Chocolate Macaron",
     category: "Chocolate",
     price: 2.75,
@@ -198,7 +198,7 @@ const macarons = [
     tags: ["Chocolate", "Orange"],
   },
   {
-    id: 75,
+    id: 164,
     name: "Coconut Macaron",
     category: "Tropical",
     price: 2.5,
@@ -213,7 +213,7 @@ const macarons = [
   },
   
   {
-    id: 77,
+    id: 165,
     name: "Birthday Confetti Macaron",
     category: "Birthday",
     price: 2.75,
@@ -227,7 +227,7 @@ const macarons = [
     tags: ["Birthday", "Colorful"],
   },
   {
-    id: 78,
+    id: 166,
     name: "White Chocolate Macaron",
     category: "Chocolate",
     price: 2.75,
@@ -241,7 +241,7 @@ const macarons = [
     tags: ["White chocolate", "Sweet"],
   },
   {
-    id: 79,
+    id: 167,
     name: "Lavender Honey Macaron",
     category: "Floral",
     price: 3,
@@ -255,7 +255,7 @@ const macarons = [
     tags: ["Lavender", "Honey", "Floral"],
   },
   {
-    id: 80,
+    id: 168,
     name: "Macaron Gift Box",
     category: "Assorted",
     price: 18,
@@ -269,7 +269,7 @@ const macarons = [
     tags: ["Gift", "Assorted", "Bestseller"],
   },
   {
-    id: 81,
+    id: 169,
     name: "Macaron GiftBox",
     category: "Assorted",
     price: 18,
