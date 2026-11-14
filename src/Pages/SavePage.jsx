@@ -6,6 +6,7 @@ import SaveCard from '../Component/save/SaveCard'
 
 const SavePage = () => {
   const {savedItems} = useContext(SavedContext)
+  
   return (
     <div className="bg-amber-900 p-10 min-h-screen">
       <div className="flex flex-col items-center justify-center ">

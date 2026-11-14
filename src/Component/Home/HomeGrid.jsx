@@ -15,8 +15,8 @@ const HomeGrid = () => {
       <CupcakeGrid />
       <CookiesGrid />
       <MacaronGrid />
-      <DessertGrid />
       <PastriesGrid />
+      <DessertGrid />
     </div>
   )
 }

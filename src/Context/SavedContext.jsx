@@ -1,4 +1,4 @@
-import {useContext, useState, useEffect, createContext}  from 'react'
+import { useState, useEffect, createContext}  from 'react'
 
 const SavedContext = createContext(null)
 
@@ -22,8 +22,37 @@ export function SavedProvider({children}) {
     return [...currentItem, item];
   })
  }
+
+
+ const [cartItems, setCartItems] = useState(() => {
+  const storedCartItems = localStorage.getItem("cartItems");
+  return storedCartItems ? JSON.parse(storedCartItems) : [];
+});
+
+useEffect(() => {
+  localStorage.setItem("cartItems", JSON.stringify(cartItems))
+}, [cartItems])
+
+function addToCart(item) {
+  setCartItems((currentItems) => {
+    const existingItem = currentItems.find(
+      (cartItem) => cartItem.id === item.id
+    );
+
+    if (existingItem) {
+      return currentItems.map((cartItem) =>
+        cartItem.id === item.id
+          ? { ...cartItem, quantity: cartItem.quantity + 1 }
+          : cartItem
+      );
+    }
+
+    return [...currentItems, { ...item, quantity: 1 }];
+  });
+}
+
  return (
-  <SavedContext.Provider value={{savedItems, toggleSaved}}>
+  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart}}>
     {children}
   </SavedContext.Provider>
  )

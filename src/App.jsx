@@ -17,6 +17,7 @@ import Nav2 from './Component/Nav2';
 import ChristmassPage from './Pages/ChristmassPage';
 import HalloweenPage from './Pages/HalloweenPage';
 import SavePage from './Pages/SavePage';
+import CartPage from './Pages/CartPage';
 
 
 function App() {
@@ -38,7 +39,8 @@ localStorage.clear()
 
       <Route path="/christmass" element={ <ChristmassPage />} />
       <Route path="/halloween" element={ <HalloweenPage />} />
-      <Route path="/save" element={<SavePage />} />
+      <Route path="/save" element={ <SavePage />}/>
+      <Route path="/cart" element={ <CartPage />}/> 
      </Routes>
   
    

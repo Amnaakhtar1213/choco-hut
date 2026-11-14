@@ -1,6 +1,7 @@
 import React from 'react'
 import cupcakes from '../../Data/cupcakeData'
 import CupcakeCard from './CupcakeCard'
+import { Link } from 'react-router-dom'
 
 const CupcakeGrid = () => {
   return (
@@ -15,7 +16,7 @@ const CupcakeGrid = () => {
       ))}
       </div>
       <div className="mt-6 flex justify-center">
-        <button className="group text-[#8B4513] bg-[#FFF8F0]  py-2 px-4 rounded-xl border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-[#FFF8F0] hover:border-[#FFF8F0]">More CupCakes <i className="fa-solid fa-arrow-right text-center transition-transform duration-300 group-hover:translate-x-1"></i></button>
+        <Link to="/cupcake" className="group text-[#8B4513] bg-[#FFF8F0]  py-2 px-4 rounded-xl border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-[#FFF8F0] hover:border-[#FFF8F0]">More CupCakes <i className="fa-solid fa-arrow-right text-center transition-transform duration-300 group-hover:translate-x-1"></i></Link>
       </div>
       </div>
      

@@ -1,6 +1,7 @@
 import React from 'react'
 import CakeCard from './CakeCard'
 import cakes from '../../Data/cakePage'
+import { Link } from 'react-router-dom'
 
 
 const CakeGrid = () => {
@@ -21,7 +22,7 @@ const CakeGrid = () => {
       ))}
       </div>
       <div className="mt-6 flex justify-center">
-        <button className="group text-[#8B4513] bg-[#FFF8F0]  py-2 px-4 rounded-xl border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-[#FFF8F0] hover:border-[#FFF8F0]">More Cakes <i className="fa-solid fa-arrow-right text-center transition-transform duration-400 group-hover:translate-x-1"></i></button>
+        <Link to="/cake" className="group text-[#8B4513] bg-[#FFF8F0]  py-2 px-4 rounded-xl border-2 border-[#8B4513] hover:bg-[#8B4513] hover:text-[#FFF8F0] hover:border-[#FFF8F0]">More Cakes <i className="fa-solid fa-arrow-right text-center transition-transform duration-400 group-hover:translate-x-1"></i></Link>
       </div>
       </div>
      
