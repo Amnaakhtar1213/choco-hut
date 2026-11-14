@@ -4,9 +4,11 @@ import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
 const CupcakeCard = ({cake, showFavorite = true}) => {
-  const {savedItems, toggleSaved} = useContext(SavedContext)
+  const {savedItems, toggleSaved, addToCart, cartItems} = useContext(SavedContext)
 
   const isSaved = savedItems.some((savedItems) => savedItems.id === cake.id)
+
+  const isInCart = cartItems.find((cartItem) => cartItem.id === cake.id)
 
   return (
     <Link to="/cupcake" className="block">
@@ -33,7 +35,21 @@ const CupcakeCard = ({cake, showFavorite = true}) => {
       </div>
       <div className="mt-2 mb-2 flex justify-between items-center gap-3 px-10">
         <span className="text-lg font-bold">${cake.price}</span>
-        <button className="rounded-lg bg-[#a15c2b] text-amber-50 py-2 px-4 text-sm font-semibold transition-colors hover:bg-[#8b4f25]">Add to Cart</button>
+       <button
+        type="button"
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          addToCart(cake);
+        }}
+        className={`rounded-lg px-4 py-2 text-sm font-semibold text-amber-50 transition-colors ${
+          isInCart
+            ? "bg-[#7f9359] hover:bg-[#687b46]"
+            : "bg-[#a15c2b] hover:bg-[#8b4f25]"
+        }`}
+      >
+        {isInCart ? "Added 😋" : "Add to Cart"}
+</button>
       </div>
       </div>
     </Link>

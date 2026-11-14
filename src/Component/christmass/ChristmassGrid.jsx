@@ -16,7 +16,7 @@ const ChristmassGrid = () => {
     className="h-48 w-full object-cover sm:h-64 md:h-80"
   />
 </div>
-<div className="mx-auto flex flex-row h-full w-120 items-center justify-center border border-green-900 bg-red-800 text-green-950 rounded-2xl hover:shadow-2xl hover:shadow-green-500">
+<div className="mx-auto flex flex-row h-full w-120 items-center justify-center border border-green-900 bg-red-800 text-green-800 rounded-2xl hover:shadow-2xl hover:shadow-green-500">
   <h1 className="px-4 py-1 text-center text-3xl font-bold">
    HAPPY CHRISTMASS
   </h1>

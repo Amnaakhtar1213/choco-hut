@@ -40,10 +40,8 @@ function addToCart(item) {
     );
 
     if (existingItem) {
-      return currentItems.map((cartItem) =>
-        cartItem.id === item.id
-          ? { ...cartItem, quantity: cartItem.quantity + 1 }
-          : cartItem
+      return currentItems.filter((cartItem) =>
+        !(cartItem.id === item.id)
       );
     }
 

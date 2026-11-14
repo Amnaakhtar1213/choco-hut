@@ -96,7 +96,7 @@ const cakes = [
     tags: ["Classic", "Chocolate"],
   },
   {
-    id: 28,
+    id: 29,
     path: "/cake",
     name: "Strawberry Shortcake",
     category: "Fruit",
@@ -112,7 +112,7 @@ const cakes = [
     tags: ["Fruit", "Birthday"],
   },
   {
-    id: 29,
+    id: 30,
     path: "/cake",
     name: "Salted Caramel Cake",
     category: "Caramel",
@@ -128,7 +128,7 @@ const cakes = [
     tags: ["Caramel", "Celebration"],
   },
   {
-    id: 30,
+    id: 31,
     path: "/cake",
     name: "Cherry Cream Cake",
     category: "Chocolate",
@@ -144,7 +144,7 @@ const cakes = [
     tags: ["Cookie", "Birthday"],
   },
   {
-    id: 31,
+    id: 32,
     path: "/cake",
     name: "Funfetti Cake",
     category: "Vanilla",
@@ -160,7 +160,7 @@ const cakes = [
     tags: ["Birthday", "Kids"],
   },
   {
-    id: 32,
+    id: 33,
     path: "/cake",
     name: "Coconut Cream Cake",
     category: "Tropical",
@@ -176,7 +176,7 @@ const cakes = [
     tags: ["Tropical", "Coconut"],
   },
   {
-    id: 33,
+    id: 34,
     path: "/cake",
     name: "Espresso Mocha Cake",
     category: "Coffee",
@@ -192,7 +192,7 @@ const cakes = [
     tags: ["Coffee", "Chocolate"],
   },
   {
-    id: 34,
+    id: 35,
     path: "/cake",
     name: "Carrot fruit Cake",
     category: "Fruit",
@@ -208,7 +208,7 @@ const cakes = [
     tags: ["Fruit", "Tropical"],
   },
   {
-    id: 35,
+    id: 36,
     path: "/cake",
     name: "Marble Swirl Cake",
     category: "Chocolate",
@@ -224,7 +224,7 @@ const cakes = [
     tags: ["Classic", "Vanilla"],
   },
   {
-    id: 36,
+    id: 37,
     path: "/cake",
     name: "Choco-chip Cake",
     category: "Floral",
@@ -240,7 +240,7 @@ const cakes = [
     tags: ["Floral", "Specialty"],
   },
   {
-    id: 37,
+    id: 38,
     path: "/cake",
     name: "Gluten-Free Chocolate Cake",
     category: "Gluten-Free",
@@ -256,7 +256,7 @@ const cakes = [
     tags: ["Gluten-Free", "Chocolate"],
   },
   {
-    id: 38,
+    id: 39,
     path: "/cake",
     name: " Vanilla Berry Cheese Cake",
     category: "Vegan",
@@ -272,7 +272,7 @@ const cakes = [
     tags: ["Vegan", "Dairy-Free", "Fruit"],
   },
   {
-    id: 39,
+    id: 40,
     path: "/cake",
     name: "Choclate Nuts Cake",
     category: "Seasonal",
@@ -288,7 +288,7 @@ const cakes = [
     tags: ["Seasonal", "Autumn"],
   },
   {
-    id: 40,
+    id: 41,
     path: "/cake",
     name: "Raspberry White Chocolate Cake",
     category: "Fruit",
@@ -304,7 +304,7 @@ const cakes = [
     tags: ["Fruit", "Celebration"],
   },
   {
-    id: 41,
+    id: 42,
     path: "/cake",
     name: "Birthday Confetti Cake",
     category: "Birthday",

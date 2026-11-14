@@ -31,8 +31,8 @@ localStorage.clear()
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/cake" element={<CakePage />} />
-      <Route path="/Cupcake" element={<CupcakePage />} />
-      <Route path="/Cookies" element={<CookiesPage />} />
+      <Route path="/cupcake" element={<CupcakePage />} />
+      <Route path="/cookies" element={<CookiesPage />} />
       <Route path="/macarons" element={<MacaronsPage />} />
       <Route path="/dessert" element={<DessertPage />} />
       <Route path="/pastries" element={<PatriesPage />} />

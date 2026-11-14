@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from "../assets/Features/Hutlogo.png"
+import img13 from "../assets/Features/Hutlogo.png"
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
   <div className="relative flex flex-col items-center px-4 md:min-h-56 md:justify-center">
   {/* Logo: above newsletter on small screens, left side on desktop */}
   <img
-    src={img2}
+    src={img13}
     alt="Choco-Hut"
     className="mb-0 h-60 w-60 object-contain md:absolute md:left-4 md:top-1/2 md:mb-0 md:h-60 md:w-60 md:-translate-y-1/2"
   />

@@ -4,9 +4,12 @@ import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
 const ChristmassCard = ({item, showFavorite = true}) => {
- const {savedItems, toggleSaved}  = useContext(SavedContext)
+ const {savedItems, toggleSaved, addToCart, cartItems}  = useContext(SavedContext)
 
   const isSaved = savedItems.some((savedItems) => savedItems.id === item.id)
+
+  const isInCart = cartItems.find((cartItem) => cartItem.id === item.id)
+
   return (
    <Link to="/christmass" className="block">
       <article className="group overflow-hidden rounded-3xl border border-red-200 bg-[#eed1d1] shadow-lg shadow-red-950/10 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-950/20">
@@ -100,10 +103,14 @@ const ChristmassCard = ({item, showFavorite = true}) => {
 
         <button
           type="button"
-          disabled={!item.inStock}
-          className="mt-5 w-full rounded-xl bg-red-800 px-4 py-3 font-semibold text-white transition hover:bg-red-900 disabled:cursor-not-allowed disabled:bg-gray-400"
+          onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          addToCart(item);
+        }}
+          className={`mt-5 w-full rounded-xl  px-4 py-3 font-semibold text-white transition  disabled:cursor-not-allowed disabled:bg-gray-400 ${isInCart ? "bg-green-900 hover:bg-green-950" : "bg-red-800 hover:bg-red-900"}`}
         >
-          {item.inStock ? "Add to cart" : "Currently unavailable"}
+          {isInCart ? "Added 😋" : "Add to Cart"}
         </button>
       </div>
     </article>  

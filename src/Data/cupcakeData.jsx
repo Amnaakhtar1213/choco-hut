@@ -1,6 +1,6 @@
 const cupcakes = [
   {
-    id: 77,
+    id: 78,
     name: "Classic Chocolate Cupcake",
     category: "Chocolate",
     price: 4.5,
@@ -16,7 +16,7 @@ const cupcakes = [
   
  
   {
-    id: 78,
+    id: 79,
     name: "Chocolate Raspberry Cupcake",
     category: "Chocolate",
     price: 5.25,
@@ -30,7 +30,7 @@ const cupcakes = [
     tags: ["Chocolate", "Fruit"],
   },
    {
-    id: 79,
+    id: 80,
     name: "Red Velvet Cupcake",
     category: "Red Velvet",
     price: 4.75,
@@ -44,7 +44,7 @@ const cupcakes = [
     tags: ["Red velvet", "Classic"],
   },
   {
-    id: 80,
+    id: 81,
     name: "Chocolate Mint Cupcake",
     category: "Chocolate",
     price: 4.75,
@@ -58,7 +58,7 @@ const cupcakes = [
     tags: ["Chocolate", "Mint"],
   },
   {
-    id: 81,
+    id: 82,
     name: "Chocolate Cherry Cupcake",
     category: "Chocolate",
     price: 5,
@@ -72,7 +72,7 @@ const cupcakes = [
     tags: ["Chocolate", "Cherry"],
   },
   {
-    id: 82,
+    id: 83,
     name: "Chocolate Fudge Cupcake",
     category: "Chocolate",
     price: 5,
@@ -86,7 +86,7 @@ const cupcakes = [
     tags: ["Chocolate", "Fudge"],
   },
    {
-    id: 83,
+    id: 84,
     name: "Chocolate Peanut Butter Cupcake",
     category: "Chocolate",
     price: 5.25,
@@ -100,7 +100,7 @@ const cupcakes = [
     tags: ["Chocolate", "Peanut butter"],
   },
   {
-    id: 84,
+    id: 85,
     name: "Chocolate Hazelnut Cupcake",
     category: "Chocolate",
     price: 5.5,
@@ -115,7 +115,7 @@ const cupcakes = [
   },
   
    {
-    id: 85,
+    id: 86,
     name: "Chocolate Oreo Cupcake",
     category: "Chocolate",
     price: 5,
@@ -129,7 +129,7 @@ const cupcakes = [
     tags: ["Chocolate", "Cookies and cream"],
   },
    {
-    id: 86,
+    id: 87,
     name: "Chocolate Salted Caramel Cupcake",
     category: "Chocolate",
     price: 5.25,
@@ -143,7 +143,7 @@ const cupcakes = [
     tags: ["Chocolate", "Caramel"],
   },
   {
-    id: 87,
+    id: 88,
     name: "Chocolate Mocha Cupcake",
     category: "Chocolate",
     price: 5,
@@ -157,7 +157,7 @@ const cupcakes = [
     tags: ["Chocolate", "Coffee"],
   },
    {
-    id: 88,
+    id: 89,
     name: "Triple Chocolate Cupcake",
     category: "Chocolate",
     price: 5.5,
@@ -171,7 +171,7 @@ const cupcakes = [
     tags: ["Chocolate", "Extra chocolate"],
   },
   {
-    id: 89,
+    id: 90,
     name: "Chocolate Coconut Cupcake",
     category: "Chocolate",
     price: 4.75,
@@ -185,7 +185,7 @@ const cupcakes = [
     tags: ["Chocolate", "Coconut"],
   },
   {
-    id: 90,
+    id: 91,
     name: "Chocolate Orange Cupcake",
     category: "Chocolate",
     price: 4.75,
@@ -199,7 +199,7 @@ const cupcakes = [
     tags: ["Chocolate", "Citrus"],
   },
   {
-    id: 91,
+    id: 92,
     name: "Chocolate Strawberry Cupcake",
     category: "Chocolate",
     price: 5,
@@ -213,7 +213,7 @@ const cupcakes = [
     tags: ["Chocolate", "Strawberry"],
   },
   {
-    id: 92,
+    id: 93,
     name: "Chocolate Rose Cupcake",
     category: "Chocolate",
     price: 5.5,
@@ -227,7 +227,7 @@ const cupcakes = [
     tags: ["Chocolate", "Elegant", "Gift"],
   },
   {
-    id: 93,
+    id: 94,
     name: "Vanilla Flower Cupcake",
     category: "Vanilla",
     price: 4.5,
@@ -242,7 +242,7 @@ const cupcakes = [
   },
  
   {
-    id: 94,
+    id: 95,
     name: "Halloween Chocolate Cupcake",
     category: "Seasonal",
     price: 5.25,
@@ -256,7 +256,7 @@ const cupcakes = [
     tags: ["Chocolate", "Halloween", "Seasonal"],
   },
   {
-    id: 95,
+    id: 96,
     name: "Birthday Sprinkle Cupcake",
     category: "Birthday",
     price: 4.5,
@@ -270,7 +270,7 @@ const cupcakes = [
     tags: ["Birthday", "Colorful"],
   },
   {
-    id: 96,
+    id: 97,
     name: "Chocolate Galaxy Cupcake",
     category: "Chocolate",
     price: 5.5,

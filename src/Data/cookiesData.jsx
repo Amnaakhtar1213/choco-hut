@@ -1,6 +1,6 @@
 const cookies = [
   {
-    id: 57,
+    id: 58,
     name: "Double Chocolate Chip Cookie",
     category: "Chocolate",
     price: 3.5,
@@ -14,7 +14,7 @@ const cookies = [
     tags: ["Chocolate", "Bestseller"],
   },
    {
-    id: 58,
+    id: 59,
     name: "Chocolate Orange Cookie",
     category: "Chocolate",
     price: 3.5,
@@ -28,7 +28,7 @@ const cookies = [
     tags: ["Chocolate", "Citrus"],
   },
    {
-    id: 59,
+    id: 60,
     name: "Pistachio Cookie",
     category: "Nut",
     price: 3.75,
@@ -42,7 +42,7 @@ const cookies = [
     tags: ["Pistachio", "Nutty"],
   },
    {
-    id: 60,
+    id: 61,
     name: "coffee beans Cookie",
     category: "coffee",
     price: 3,
@@ -56,7 +56,7 @@ const cookies = [
     tags: ["Oatmeal", "Cinnamon"],
   },
   {
-    id: 61,
+    id: 62,
     name: "Classic Chocolate Chip Cookie",
     category: "Chocolate Chip",
     price: 3,
@@ -70,7 +70,7 @@ const cookies = [
     tags: ["Classic", "Bestseller"],
   },
   {
-    id: 62,
+    id: 63,
     name: "Triple Chocolate Cookie",
     category: "Chocolate",
     price: 3.75,
@@ -84,7 +84,7 @@ const cookies = [
     tags: ["Chocolate", "Fudgy"],
   },
   {
-    id: 63,
+    id: 64,
     name: "White Chocolate Macadamia Cookie",
     category: "White Chocolate",
     price: 3.75,
@@ -98,7 +98,7 @@ const cookies = [
     tags: ["White chocolate", "Macadamia"],
   },
   {
-    id: 64,
+    id: 65,
     name: "Red Velvet Cookie",
     category: "Red Velvet",
     price: 3.5,
@@ -113,7 +113,7 @@ const cookies = [
   },
  
   {
-    id: 65,
+    id: 66,
     name: "Peanut Butter Cookie",
     category: "Peanut Butter",
     price: 3.25,
@@ -127,7 +127,7 @@ const cookies = [
     tags: ["Peanut butter", "Classic"],
   },
   {
-    id: 66,
+    id: 67,
     name: "Salted Caramel Cookie",
     category: "Caramel",
     price: 3.5,
@@ -141,7 +141,7 @@ const cookies = [
     tags: ["Caramel", "Sweet and salty"],
   },
   {
-    id: 67,
+    id: 68,
     name: "Chocolate Hazelnut Cookie",
     category: "Chocolate",
     price: 3.75,
@@ -155,7 +155,7 @@ const cookies = [
     tags: ["Chocolate", "Hazelnut"],
   },
   {
-    id: 68,
+    id: 69,
     name: "Lemon Sugar Cookie",
     category: "Citrus",
     price: 3,
@@ -169,7 +169,7 @@ const cookies = [
     tags: ["Lemon", "Citrus"],
   },
   {
-    id: 69,
+    id: 70,
     name: "S'mores Cookie",
     category: "Chocolate",
     price: 3.75,
@@ -183,7 +183,7 @@ const cookies = [
     tags: ["Chocolate", "Marshmallow"],
   },
   {
-    id: 70,
+    id: 71,
     name: "Birthday Sprinkle Cookie",
     category: "Birthday",
     price: 3.25,
@@ -197,7 +197,7 @@ const cookies = [
     tags: ["Birthday", "Colorful"],
   },
   {
-    id: 71,
+    id: 72,
     name: "Double Chocolate Brownie Cookie",
     category: "Chocolate",
     price: 3.75,
@@ -211,7 +211,7 @@ const cookies = [
     tags: ["Chocolate", "Brownie-style"],
   },
   {
-    id: 72,
+    id: 73,
     name: "Cinnamon Snickerdoodle",
     category: "Cinnamon",
     price: 3,
@@ -225,7 +225,7 @@ const cookies = [
     tags: ["Cinnamon", "Soft-baked"],
   },
   {
-    id: 73,
+    id: 74,
     name: "Coconut Chocolate Cookie",
     category: "Chocolate",
     price: 3.5,
@@ -239,7 +239,7 @@ const cookies = [
     tags: ["Chocolate", "Coconut"],
   },
   {
-    id: 74,
+    id: 75,
     name: "Raspberry White Chocolate Cookie",
     category: "Fruit",
     price: 3.75,
@@ -254,7 +254,7 @@ const cookies = [
   },
  
   {
-    id: 75,
+    id: 76,
     name: "Ginger Molasses Cookie",
     category: "Spiced",
     price: 3.25,
@@ -268,7 +268,7 @@ const cookies = [
     tags: ["Ginger", "Spiced"],
   },
   {
-    id: 76,
+    id: 77,
     name: "Chocolate Ganache Stuffed Cookie",
     category: "Chocolate",
     price: 4,

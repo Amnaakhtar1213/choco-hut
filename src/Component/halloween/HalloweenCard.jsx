@@ -4,9 +4,11 @@ import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
 const HalloweenCard = ({item, showFavorite = true}) => {
- const {savedItems, toggleSaved}  = useContext(SavedContext)
+ const {savedItems, toggleSaved, addToCart, cartItems}  = useContext(SavedContext)
 
   const isSaved = savedItems.some((savedItems) => savedItems.id === item.id)
+
+  const isInCart = cartItems.find((cartItem) => cartItem.id === item.id)
 
   return (
     <Link to="/halloween"  className="block">
@@ -100,10 +102,14 @@ const HalloweenCard = ({item, showFavorite = true}) => {
 
         <button
           type="button"
-          disabled={!item.inStock}
-          className="mt-5 w-full rounded-xl bg-orange-700 px-4 py-3 font-semibold text-white transition hover:bg-orange-800 disabled:cursor-not-allowed disabled:bg-gray-400"
+           onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          addToCart(item);
+        }}
+          className={`mt-5 w-full rounded-xl  px-4 py-3 font-semibold text-white transition  disabled:cursor-not-allowed disabled:bg-gray-400 ${isInCart ? "bg-black " : "bg-orange-700 hover:bg-orange-800"}`}
         >
-          {item.inStock ? "Add to cart" : "Currently unavailable"}
+          {isInCart ? "Added 😋" : "Add to cart"}
         </button>
       </div>
     </article>
