@@ -5,7 +5,7 @@ import BestData from '../../Data/BestData'
 const Best = () => {
   return (
     
-      <div className="relative w-full min-h-screen overflow-hidden pb-60">
+      <div className="relative w-full min-h-screen overflow-hidden pb-70">
       <img src={img2} className="absolute inset-0 w-full h-full  object-cover blur-2xl scale-110"/>
        <div className="absolute top-6 flex flex-col items-center w-full text-white text-center">
          <h1 className="text-3xl text-[#FDF4EA]">

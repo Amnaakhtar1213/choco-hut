@@ -41,7 +41,7 @@ const BestData = [
   },
   {
     id: 20,
-    path: "/macaron",
+    path: "/macarons",
     name: "Macrones",
     price: "Rs. 400",
     description: "A crisp pastry filled with cream and topped with chocolate.",
