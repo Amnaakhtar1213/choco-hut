@@ -71,8 +71,12 @@ function removeFromCart(item) {
   );
 }
 
+function clearCart(){
+  setCartItems([])
+}
+
  return (
-  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart, changeCartQuantity, removeFromCart}}>
+  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart, changeCartQuantity, removeFromCart, clearCart}}>
     {children}
   </SavedContext.Provider>
  )

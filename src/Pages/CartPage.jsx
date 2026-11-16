@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CartCard from '../Component/cart/CartCard'
 import { useContext } from 'react'
 import SavedContext from '../Context/SavedContext'
@@ -19,12 +20,23 @@ const CartPage = () => {
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-1 lg:grid-cols-2">
-          {cartItems.map((item) => (
-            <CartCard key={`${item.category}-${item.id}`} item={item} />
-          ))}
-        </div>
-      )}
+  <>
+    <div className="grid grid-cols-1 gap-4 p-6 lg:grid-cols-2">
+      {cartItems.map((item) => (
+        <CartCard key={`${item.category}-${item.id}`} item={item} />
+      ))}
+    </div>
+
+    <div className="flex justify-end px-6">
+      <Link
+        to="/checkout"
+        className="rounded-xl bg-[#74815F]  px-6 py-3 font-semibold text-white hover:bg-[#96a67b] "
+      >
+        Proceed to Checkout
+      </Link>
+    </div>
+  </>
+)}
     </div>      
   )
 }

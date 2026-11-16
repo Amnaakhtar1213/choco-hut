@@ -18,6 +18,7 @@ import SavePage from './Pages/SavePage';
 import CartPage from './Pages/CartPage';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import CheckoutPage from './Pages/CheckoutPage';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Route path="/cart" element={ <CartPage />}/> 
       <Route path="/about" element={ <About />}/> 
       <Route path="/contact" element={ <Contact />}/> 
+      <Route path="/checkout" element={<CheckoutPage />} />
      </Routes>
   
    
