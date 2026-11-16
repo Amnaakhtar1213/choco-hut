@@ -70,7 +70,7 @@ const Nav2 = () => {
             isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
               <h1 className="text-lg text-[#8B4513] hover:text-[#F4C7C7]">Gifts</h1>
             </NavLink>
-          <NavLink to="/gift" className={({isActive}) => 
+          <NavLink to="/about" className={({isActive}) => 
           isActive ? "underline decoration-[#74815F] underlie-offser-4" : "hover:underline decoration-[#74815F]"}>
             <h1 className="text-lg text-[#8B4513] hover:text-[#F4C7C7]">About</h1>
           </NavLink>

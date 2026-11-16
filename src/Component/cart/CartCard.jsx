@@ -1,6 +1,10 @@
 import React from 'react'
+import { useContext } from 'react';
+import SavedContext from '../../Context/SavedContext';
 
 const CartCard = ({item}) => {
+  const { changeCartQuantity, removeFromCart} = useContext(SavedContext)
+
     const quantity = item.quantity ?? 1;
     const lineTotal = Number(item.price) * quantity
   
@@ -22,9 +26,9 @@ const CartCard = ({item}) => {
 
       <div className="flex items-center justify-between gap-4 sm:justify-center">
         <div className="flex items-center gap-3 rounded-xl border border-[#eadbc9] px-3 py-2">
-          <button type="button" aria-label="Decrease quantity">−</button>
+          <button onClick={() => changeCartQuantity(item, -1)} type="button" aria-label="Decrease quantity">−</button>
           <span>{quantity}</span>
-          <button type="button" aria-label="Increase quantity">+</button>
+          <button type="button" onClick={() => changeCartQuantity(item, 1)} aria-label="Increase quantity">+</button>
         </div>
 
         <p className="font-bold text-[#5f2b06]">
@@ -33,6 +37,7 @@ const CartCard = ({item}) => {
       </div>
 
       <button
+      onClick={() => removeFromCart(item)}
         type="button"
         className="text-sm font-semibold text-red-700 hover:text-red-900 sm:ml-2"
       >

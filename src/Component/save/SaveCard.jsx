@@ -3,9 +3,11 @@ import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
 const SaveCard = ({item}) => {
-  const {savedItems, toggleSaved}  = useContext(SavedContext)
+  const {savedItems, toggleSaved, cartItems, addToCart}  = useContext(SavedContext)
   
     const isSaved = savedItems.some((savedItems) => savedItems.id === item.id)
+
+    const isInCart = cartItems.find((cartItem) => cartItem.id === item.id)
 
   return (
     <div>
@@ -96,13 +98,26 @@ const SaveCard = ({item}) => {
           ))}
         </div>
 
-        <button
+
+ <button
+        type="button"
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          addToCart(item);
+        }}
+        className={`mt-5 w-full rounded-xl bg-red-800 px-4 py-3 font-semibold text-white transition hover:bg-red-900 disabled:cursor-not-allowed disabled:bg-gray-400`}
+      >
+        {isInCart ? "Added 😋" : "Add to Cart"}
+</button>
+
+        {/* <button
           type="button"
           disabled={!item.inStock}
           className="mt-5 w-full rounded-xl bg-red-800 px-4 py-3 font-semibold text-white transition hover:bg-red-900 disabled:cursor-not-allowed disabled:bg-gray-400"
         >
           {item.inStock ? "Add to cart" : "Currently unavailable"}
-        </button>
+        </button> */}
       </div>
     </article> 
     </div>

@@ -7,8 +7,10 @@ import MacaronGrid from './MacaronGrid'
 import DessertGrid from './DessertGrid'
 import PastriesGrid from './PastriesGrid'
 
+
 const HomeGrid = () => {
   return (
+    <>
     <div className="relative isolate overflow-hidden">
       <img src={img6} className="absolute inset-0 h-full w-full object-cover"/>
       <CakeGrid />
@@ -18,6 +20,7 @@ const HomeGrid = () => {
       <PastriesGrid />
       <DessertGrid />
     </div>
+  </>
   )
 }
 

@@ -49,8 +49,30 @@ function addToCart(item) {
   });
 }
 
+function changeCartQuantity(item, amount) {
+  setCartItems((currentItems) =>
+    currentItems.map((cartItem) =>
+      cartItem.id === item.id && cartItem.name === item.name
+        ? {
+            ...cartItem,
+            quantity: Math.max(1, (cartItem.quantity ?? 1) + amount),
+          }
+        : cartItem
+    )
+  );
+}
+
+function removeFromCart(item) {
+  setCartItems((currentItems) =>
+    currentItems.filter(
+      (cartItem) =>
+        !(cartItem.id === item.id && cartItem.name === item.name)
+    )
+  );
+}
+
  return (
-  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart}}>
+  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart, changeCartQuantity, removeFromCart}}>
     {children}
   </SavedContext.Provider>
  )

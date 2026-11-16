@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import './App.css'
 
 import NavbarGrid from './Pages/NavbarGrid'
@@ -12,22 +12,22 @@ import DessertPage from './Pages/DessertPage'
 import ScrollToTop from './Component/ScrollToTop';
 import MacaronsPage from './Pages/MacaronsPage';
 import PatriesPage from './Pages/PatriesPage';
-import Nav1 from './Component/Nav1';
-import Nav2 from './Component/Nav2';
 import ChristmassPage from './Pages/ChristmassPage';
 import HalloweenPage from './Pages/HalloweenPage';
 import SavePage from './Pages/SavePage';
 import CartPage from './Pages/CartPage';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 
 function App() {
-localStorage.clear()
+
 
   return (
     <>
     <ScrollToTop />
-    <NavbarGrid />
-    
+     <NavbarGrid />
+  
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/cake" element={<CakePage />} />
@@ -41,6 +41,8 @@ localStorage.clear()
       <Route path="/halloween" element={ <HalloweenPage />} />
       <Route path="/save" element={ <SavePage />}/>
       <Route path="/cart" element={ <CartPage />}/> 
+      <Route path="/about" element={ <About />}/> 
+      <Route path="/contact" element={ <Contact />}/> 
      </Routes>
   
    
