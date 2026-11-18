@@ -8,10 +8,10 @@ const SavePage = () => {
   const {savedItems} = useContext(SavedContext)
   
   return (
-    <div className="bg-amber-900 p-10 min-h-screen">
+    <div className="bg-[#f1caca] p-10 min-h-screen">
       <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-amber-50 text-3xl font-bold"> My Favorites </h1>
-        <p className="text-[#A7B48F] mt-2">Your favorite sweets, all in one place.</p>
+        <h1 className="text-amber-90 0 text-3xl font-bold"> My Favorites </h1>
+        <p className="text-[#98ae72] mt-2">Your favorite sweets, all in one place.</p>
       </div>
 
       {savedItems.length === 0 ? (

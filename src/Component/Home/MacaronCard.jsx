@@ -3,20 +3,24 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
-const MacaronCard = ({cake, showFavorite = true}) => {
+const MacaronCard = ({cake, showFavorite = true, onSelect}) => {
   const {savedItems, toggleSaved, addToCart, cartItems } = useContext(SavedContext);
 
   const isSaved = savedItems.some((savedItems) => savedItems.id === cake.id);
 
   const isInCart = cartItems.find((cartItem) => cartItem.id === cake.id)
+
   return (
-    <Link to="/macarons" className="block">
-    <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl">
+    
+    <div onClick={() => onSelect(cake)} className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl">
          <div className="relative h-56 overflow-hidden">
         <img src={cake.image} className="h-full w-full object-cover transition-transform duration-500 hover:scale-110" alt={cake.name}/>
         {showFavorite && (
         <button type="button"
-         onClick={() => toggleSaved(cake)} 
+         onClick={(event) => {
+          event.stopPropagation();
+          toggleSaved(cake);
+        }} 
          aria-label={isSaved ? "Remove from saved items" : "saved items"}
          className="absolute right-3 top-3 grid ">
           <i className={`fa-heart text-lg ${isSaved ? "fa-solid text-[#efa2a2]" : "fa-regular text-[#efa2a2]"}`}></i></button>
@@ -51,7 +55,7 @@ const MacaronCard = ({cake, showFavorite = true}) => {
 </button>
       </div>
       </div>
-      </Link>
+      
   )
 }
 

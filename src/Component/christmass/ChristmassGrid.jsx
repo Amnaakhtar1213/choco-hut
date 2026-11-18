@@ -9,11 +9,11 @@ const ChristmassGrid = () => {
   return (
      <section className="bg-[#dacbb7] ">
       {/* <Nav2 /> */}
-     <div className="mx-auto mb-8 max-w-7xl overflow-hidden rounded-3xl mt-4">
+     <div className="mx-auto mb-8 max-w-7xl overflow-hidden rounded-3xl pt-4">
   <img
     src={img11}
     alt="Christmas treats"
-    className="h-48 w-full object-cover sm:h-64 md:h-80"
+    className="h-48 w-full object-cover sm:h-64 md:h-80 rounded-2xl"
   />
 </div>
 <div className="mx-auto flex flex-col h-full w-120 items-center justify-center border border-green-900 bg-red-800 text-green-800 rounded-2xl hover:shadow-2xl hover:shadow-green-500">
