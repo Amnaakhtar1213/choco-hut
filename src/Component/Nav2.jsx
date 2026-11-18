@@ -1,11 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
-import { NavLink } from "react-router-dom";
+import { useState, useContext } from 'react'
+import SavedContext from '../Context/SavedContext';
+import { NavLink } from "react-router-dom"; 
  
 import img13 from "../assets/Features/Hutlogo.png"
 
 const Nav2 = () => {
  const [menuOpen, setMenuOpen] = useState(false)
+ const {user, signOut} = useContext(SavedContext)
 
   return (
     <div>
@@ -97,10 +99,27 @@ const Nav2 = () => {
                 <path fill="currentColor" d="M164.803 436.846q25.188 8.773 59.822 11.544V491h-59.822zM292.843 491h59.822v-54.574q-26.763 8.826-59.822 11.702zM255.606 21c-27.066 0-49.011 28.547-49.011 63.757c0 35.211 21.945 63.758 49.011 63.758s49.012-28.547 49.012-63.758S282.673 21 255.606 21m220.68 286.337c0-89.733-68.092-165.906-160.71-189.205a83.2 83.2 0 0 1-11.997 21.945c-12.32 16.036-29.806 25.188-47.962 25.188s-35.683-9.194-47.962-25.188a83.2 83.2 0 0 1-11.933-21.777c-92.283 23.498-160.008 99.524-160.008 189.037H68.25a144.2 144.2 0 0 1 15.931-66.193a148.6 148.6 0 0 0-3.232 30.803c0 88.893 30.635 160.92 175.068 160.92c153.332 0 175.068-72.08 175.068-160.972a148 148 0 0 0-3.233-30.761a144.2 144.2 0 0 1 15.9 66.203h32.535z" />  
                </svg></h1>
             </NavLink>
-           <NavLink to="/user" className={({isActive}) => 
+
+            {user ? (
+           <div className="flex items-center gap-4">
+              <span className="text-lg font-bold text-amber-50">
+                {user.name}
+              </span>
+
+          <button
+            type="button"
+            onClick={signOut}
+            className="text-lg text-[#667653] bg-amber-50 px-2 py-1 rounded-xl hover:text-[#e99e9e] shadow hover:shadow-amber-50"
+          >
+            Sign out
+          </button>
+  </div>
+            ): (
+            <NavLink to="/user" className={({isActive}) => 
           isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
             <h1 className="text-lg text-[#667653] hover:text-[#F4C7C7]"><i className="fa-solid fa-user"></i></h1>
            </NavLink>
+            ) }
             
           </div>
         </div>
@@ -132,9 +151,24 @@ const Nav2 = () => {
             <h1  onClick={() => setMenuOpen(false)} className="text-lg text-[#8B4513] hover:text-[#A4AD8D]">Cart</h1>
           </NavLink>
           
-          <NavLink to="/user">
-            <h1 onClick={() => setMenuOpen(false)} className="text-lg text-[#8B4513] hover:text-[#A4AD8D]">Account</h1>
-          </NavLink>
+          {user ? (
+  <button
+    type="button"
+    onClick={() => {
+      signOut();
+      setMenuOpen(false);
+    }}
+    className="text-left text-lg text-[#8B4513] hover:text-[#A4AD8D]"
+  >
+    Sign out
+  </button>
+) : (
+  <NavLink to="/user" onClick={() => setMenuOpen(false)}>
+    <h1 className="text-lg text-[#8B4513] hover:text-[#A4AD8D]">
+      Account
+    </h1>
+  </NavLink>
+)}
           
           </div>
            

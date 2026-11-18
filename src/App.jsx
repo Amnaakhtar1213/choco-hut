@@ -20,6 +20,8 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import CheckoutPage from './Pages/CheckoutPage';
 import SignInPage from './Pages/signInPage';
+import SignUpPage from './Pages/SignUpPage';
+import ProductDetail from './Pages/ProductDetail';
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
       <Route path="/contact" element={ <Contact />}/> 
       <Route path="/checkout" element={<CheckoutPage />} />
       <Route path="/user" element={<SignInPage />} />
+      <Route path="/signup" element={<SignUpPage />} />
+     
      </Routes>
   
    

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import SavedContext from '../../Context/SavedContext'
 
-const HalloweenCard = ({item, showFavorite = true}) => {
+const HalloweenCard = ({item, showFavorite = true, onSelect=() => {} }) => {
  const {savedItems, toggleSaved, addToCart, cartItems}  = useContext(SavedContext)
 
   const isSaved = savedItems.some((savedItems) => savedItems.id === item.id)
@@ -11,8 +11,8 @@ const HalloweenCard = ({item, showFavorite = true}) => {
   const isInCart = cartItems.find((cartItem) => cartItem.id === item.id)
 
   return (
-    <Link to="/halloween"  className="block">
-     <article className="group overflow-hidden rounded-3xl border border-orange-200 bg-[#eac189] shadow-lg shadow-orange-950/10 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-950/20">
+    
+     <article onClick={() => onSelect(item)} className="group cursor-pointer overflow-hidden rounded-3xl border border-orange-200 bg-[#eac189] shadow-lg shadow-orange-950/10 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-950/20">
       <div className="relative h-60 overflow-hidden">
         <img
           src={item.image}
@@ -113,7 +113,7 @@ const HalloweenCard = ({item, showFavorite = true}) => {
         </button>
       </div>
     </article>
-    </Link>
+    
   )
 }
 

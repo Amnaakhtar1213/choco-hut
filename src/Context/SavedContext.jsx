@@ -75,8 +75,29 @@ function clearCart(){
   setCartItems([])
 }
 
+const [user, setUser] = useState(() => {
+  const storedUser = localStorage.getItem("user");
+  return storedUser ? JSON.parse(storedUser) : null;
+})
+
+useEffect(() => {
+  if(user){
+    localStorage.setItem("user", JSON.stringify(user))
+  } else {
+    localStorage.removeItem("user")
+  }
+}, [user])
+
+function signIn(userData){
+  setUser(userData)
+}
+
+function signOut(){
+  setUser(null)
+}
+
  return (
-  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart, changeCartQuantity, removeFromCart, clearCart}}>
+  <SavedContext.Provider value={{savedItems, toggleSaved, cartItems, addToCart, changeCartQuantity, removeFromCart, clearCart, user, signIn, signOut}}>
     {children}
   </SavedContext.Provider>
  )

@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import SavedContext from "../Context/SavedContext";
 
 const SignInPage = () => {
+  const {signIn} = useContext(SavedContext)
   const navigate = useNavigate()
+
+  const {email, setEmail} = useState("")
 
   function handleSubmit(){
    event.preventDefault();
+
+   const name = email.split("@")[0];
+   signIn({name, email});
    navigate("/checkout")
   }
   
@@ -30,10 +38,13 @@ const SignInPage = () => {
               Email address
             </span>
             <input
-              type="email" required
-              placeholder="you@example.com"
-              className="mt-2 w-full rounded-lg border border-[#dfd0bd] bg-[#fbf7f0] px-4 py-3 outline-none focus:border-[#9b754c]"
-            />
+                type="email"
+                required
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="you@example.com"
+                className="mt-2 w-full rounded-lg border border-[#dfd0bd] bg-[#fbf7f0] px-4 py-3 outline-none focus:border-[#9b754c]"
+              />
           </label>
 
           <label className="block">
