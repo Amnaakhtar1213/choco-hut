@@ -10,13 +10,13 @@ const SavePage = () => {
   return (
     <div className="bg-[#f1caca] p-10 min-h-screen">
       <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-amber-90 0 text-3xl font-bold"> My Favorites </h1>
+        <h1 className="text-amber-90 text-3xl font-bold"> My Favorites </h1>
         <p className="text-[#98ae72] mt-2">Your favorite sweets, all in one place.</p>
       </div>
 
       {savedItems.length === 0 ? (
         <div className="flex items-center justify-center min-h-[60vh]">
-          <p className="text-amber-50 text-center text-xl">  You haven’t saved any treats yet.</p>
+          <p className="text-amber-50 text-center text-xl">You haven’t saved any treats yet.</p>
           </div>
       ) : (
            <div className="grid grid-cols-1 gap-4 p-6 sm:grid-cols-2 lg:grid-cols-4">

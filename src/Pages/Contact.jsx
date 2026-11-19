@@ -1,7 +1,20 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Contact = () => {
+   const [messageSent, setMessageSent] = useState(false);
+
+    function handleSubmit(event) {
+    event.preventDefault();
+
+    setMessageSent(true);
+     event.currentTarget.reset();
+   
+     setTimeout(() => {
+      setMessageSent(false);
+  }, 5000);
+}
   return (
     <div>
         <main className="bg-[#fbf7f0] text-[#38251b]">
@@ -63,7 +76,7 @@ const Contact = () => {
                 href="mailto:hello@chocohut.example"
                 className="mt-2 inline-block text-lg text-[#5f2b06] hover:text-[#9b754c]"
               >
-                hello@chocohut.example
+                cake@chocohut.com
               </a>
             </div>
 
@@ -92,15 +105,17 @@ const Contact = () => {
             How can we help?
           </h2>
 
-          <form className="mt-8 space-y-5">
+          <form onSubmit={handleSubmit} className="mt-8 space-y-5">
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block">
                 <span className="text-sm font-medium text-[#5f2b06]">
                   Your name
                 </span>
                 <input
+                name="name"
                   type="text"
                   placeholder="Name"
+                  required
                   className="mt-2 w-full rounded-xl border border-[#dfd0bd] bg-[#fbf7f0] px-4 py-3 outline-none transition focus:border-[#9b754c]"
                 />
               </label>
@@ -110,7 +125,9 @@ const Contact = () => {
                   Email address
                 </span>
                 <input
+                name="email"
                   type="email"
+                  required
                   placeholder="you@example.com"
                   className="mt-2 w-full rounded-xl border border-[#dfd0bd] bg-[#fbf7f0] px-4 py-3 outline-none transition focus:border-[#9b754c]"
                 />
@@ -122,7 +139,9 @@ const Contact = () => {
                 Subject
               </span>
               <input
+              name="subject"
                 type="text"
+                required
                 placeholder="What would you like to ask about?"
                 className="mt-2 w-full rounded-xl border border-[#dfd0bd] bg-[#fbf7f0] px-4 py-3 outline-none transition focus:border-[#9b754c]"
               />
@@ -133,17 +152,19 @@ const Contact = () => {
                 Message
               </span>
               <textarea
+              name="message"
                 rows="5"
+                required
                 placeholder="Write your message here..."
                 className="mt-2 w-full resize-none rounded-xl border border-[#dfd0bd] bg-[#fbf7f0] px-4 py-3 outline-none transition focus:border-[#9b754c]"
               />
             </label>
 
             <button
-              type="button"
+              type="submit"
               className="w-full rounded-xl bg-[#5f2b06] px-6 py-3 font-semibold text-white transition hover:bg-[#7a4216] sm:w-auto"
             >
-              Send Message
+              {messageSent ? "Sent 😊" : "Send Message"}
             </button>
           </form>
         </div>

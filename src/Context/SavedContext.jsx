@@ -34,6 +34,10 @@ useEffect(() => {
 }, [cartItems])
 
 function addToCart(item) {
+  if(!user){
+    alert("Please sign in before adding products to your cart.");
+    return
+  }
   setCartItems((currentItems) => {
     const existingItem = currentItems.find(
       (cartItem) => cartItem.id === item.id

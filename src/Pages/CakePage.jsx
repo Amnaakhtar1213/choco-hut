@@ -48,31 +48,31 @@ const CakePage = () => {
               className="h-72 w-full object-cover md:h-full"
             />
 
-          <div className="p-6 sm:p-8">
+          <div className="p-4 sm:p-8">
   <p className="text-sm font-medium text-amber-900">
     {selectedCake.category}
   </p>
 
-  <h2 className="mt-2 text-3xl font-bold text-[#8B4513]">
+  <h2 className="md:mt-3 text-xl md:font-3xl font-bold text-[#8B4513]">
     {selectedCake.name}
   </h2>
 
-  <p className="mt-3 text-sm text-gray-600">
+  <p className="mt-1 md:mt-3 text-sm text-gray-600">
     ★ {selectedCake.rating} ({selectedCake.reviewCount} reviews)
   </p>
 
-  <p className="mt-4 text-2xl font-bold text-[#8B4513]">
+  <p className="mt-1 md:mt-4 text-xl md:text-2xl font-bold text-[#8B4513]">
     ${selectedCake.price}
   </p>
 
-  <p className="mt-4 leading-7 text-[#667653]">
+  <p className="md:mt-4 leading-7 text-[#667653]">
     {selectedCake.description}
   </p>
 
-  <h3 className="mt-5 text-sm font-bold uppercase text-[#8B4513]">
+  <h3 className="md:mt-5 text-sm font-bold uppercase text-[#8B4513]">
     Available sizes
   </h3>
-  <div className="mt-2 flex flex-wrap gap-2">
+  <div className="mt-1 md:mt-2 flex flex-wrap gap-2">
     {selectedCake.sizes.map((size) => (
       <span key={size} className="rounded-full bg-orange-100 px-3 py-1 text-sm">
         {size}
@@ -80,10 +80,10 @@ const CakePage = () => {
     ))}
   </div>
 
-  <h3 className="mt-5 text-sm font-bold uppercase text-[#8B4513]">
+  <h3 className="mt-1 md:mt-5 text-sm font-bold uppercase text-[#8B4513]">
     Ingredients
   </h3>
-  <div className="mt-2 flex flex-wrap gap-2">
+  <div className="md:mt-2 flex flex-wrap gap-2">
     {selectedCake.ingredients.map((ingredient) => (
       <span key={ingredient} className="rounded-full bg-orange-50 px-3 py-1 text-sm">
         {ingredient}
@@ -91,7 +91,7 @@ const CakePage = () => {
     ))}
   </div>
 
-  <h3 className="mt-5 text-sm font-bold uppercase text-[#8B4513]">
+  <h3 className="md:mt-5 text-sm font-bold uppercase text-[#8B4513]">
     Allergens
   </h3>
   <p className="mt-2 text-sm text-gray-700">
@@ -106,14 +106,14 @@ const CakePage = () => {
     ))}
   </div>
 
-  <p className={`mt-4 text-sm font-semibold ${selectedCake.inStock ? "text-green-700" : "text-red-700"}`}>
+  <p className={`mt-4 hidden md:flex text-sm font-semibold ${selectedCake.inStock ? "text-green-700" : "text-red-700"}`}>
     {selectedCake.inStock ? "In stock" : "Sold out"}
   </p>
-
+<div className="flex flex-row gap-4 md:flex-col">
   <button
     type="button"
     onClick={() => toggleSaved(selectedCake)}
-    className="mt-5 w-full rounded-lg border-2 border-[#a15c2b] px-4 py-3 font-semibold text-[#8B4513] hover:bg-orange-50"
+    className="mt-1 md:mt-5 w-full rounded-lg border-2 border-[#a15c2b] px-4 py-3 font-semibold text-[#8B4513] hover:bg-orange-50"
   >
     {isSaved ? "♥ Saved" : "♡ Save this cake"}
   </button>
@@ -122,7 +122,7 @@ const CakePage = () => {
     type="button"
     disabled={!selectedCake.inStock || isInCart}
     onClick={() => addToCart(selectedCake)}
-    className="mt-3 w-full rounded-lg bg-[#a15c2b] px-4 py-3 font-semibold text-amber-50 hover:bg-[#8b4f25] disabled:cursor-not-allowed disabled:bg-[#7f9359]"
+    className="mt-1 md:mt-3 w-full rounded-lg bg-[#a15c2b] px-4 py-3 font-semibold text-amber-50 hover:bg-[#8b4f25] disabled:cursor-not-allowed disabled:bg-[#7f9359]"
   >
     {!selectedCake.inStock
       ? "Sold out"
@@ -130,6 +130,8 @@ const CakePage = () => {
         ? "Added 😋"
         : "Add to cart"}
   </button>
+</div>
+  
 </div>
 
           </article>

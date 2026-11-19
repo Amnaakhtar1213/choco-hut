@@ -31,7 +31,7 @@ const ProductDetail = () => {
   return (
     <div>
       <main className="min-h-screen bg-[#7b694d] px-4 py-8 sm:px-8 sm:py-12">
-      <article className="mx-auto grid max-w-7xl overflow-hidden rounded-3xl border-4 border-orange-200 bg-[#eac189] shadow-2xl md:min-h-162.5 md:grid-cols-2">
+      <article className="mx-auto grid h-[calc(100vh-4rem)] max-h-225 w-full max-w-7xl grid-rows-[minmax(180px,32vh)_1fr] overflow-hidden rounded-3xl border-4 border-orange-200 bg-[#eac189] shadow-2xl md:min-h-162 md:grid-cols-2 md:grid-rows-1">
         {/* Large cake image */}
         <div className="relative min-h-80 md:min-h-full">
           <img
@@ -120,6 +120,7 @@ const ProductDetail = () => {
             </div>
           </div>
 
+<div className="sticky bottom-0 mt-4 bg-[#eac189] pb-2 pt-3">
           <button
             type="button"
             disabled={!item.inStock || isInCart}
@@ -132,6 +133,7 @@ const ProductDetail = () => {
                 ? "Added to cart 😋"
                 : "Add to cart"}
           </button>
+          </div>
         </section>
       </article>
     </main>
