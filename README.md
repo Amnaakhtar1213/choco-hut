@@ -12,6 +12,7 @@ Choco-Hut is a responsive bakery storefront for discovering handcrafted cakes, c
 - Sign-in and sign-out interface
 - Gift collection with a video section
 - Contact form with a front-end confirmation message
+- Add menu with their price
 
 ## 🛠️ Tech stack
 

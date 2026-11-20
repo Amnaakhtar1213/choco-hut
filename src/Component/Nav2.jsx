@@ -71,25 +71,19 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
   return (
     <div>
       <nav className=" md:top-60 left-0 bg-[#A7B48F] w-full h-30 md:h-16 shadow-md z-50">
-        <div className="mx-auto px-6 h-full flex items-center justify-between shadow-md">
-    
-          {/* <div className="md:hidden flex items-center">
-            <i className="fa-solid fa-house text-2xl font-bold text-[#8B4513]"></i>
-            <h1 className="text-2xl font-bold text-[#8B4513] ml-2">Choco-Hut</h1>
-          </div> */}
+        <div className="mx-auto flex h-full items-center justify-between px-6 shadow-md md:justify-center md:gap-20">
 
  <div className="md:hidden flex items-center">
             <img src={img13} alt="logo" className="w-70 h-30 object-cover"/>
-          </div>
+    </div>
           
-
-           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:hidden text-[#8B4513] hover:text-[#F4C7C7] focus:outline-none">
+ <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl md:hidden text-[#8B4513] hover:text-[#F4C7C7] focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
             <path fill="currentColor" d="M12 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4m-7 2a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2zm-1 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m1 3a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2z" />
             </svg>
           </button>
 
-          <div className=" space-x-8 hidden md:flex flex-row items-center justify-center">
+          <div className=" hidden flex-row flex-nowrap items-center justify-center gap-15 md:flex">
             <NavLink to="/" className={({isActive}) => 
             isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
               <h1 className="text-lg text-[#8B4513] hover:text-[#F4C7C7]">Home</h1> 
@@ -107,8 +101,12 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
         isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
            <h1 className="text-lg text-[#8B4513] hover:text-[#F4C7C7]">Contact</h1>
          </NavLink>
+         <NavLink to="/menu" className={({isActive}) => 
+        isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
+           <h1 className="text-lg text-[#8B4513] hover:text-[#F4C7C7]">Menu</h1>
+         </NavLink>
 
-         <div className="relative">
+   <div className="relative">
   <button
   type="button"
   onClick={() => setCategoriesOpen(!categoriesOpen)}
@@ -153,7 +151,7 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
            
          </div>
 
-          <div className=" space-x-8 hidden md:flex items-center justify-center">
+          <div className="hidden flex-nowrap items-center justify-center gap-15 md:flex">
             <NavLink to="save" className={({isActive}) => 
             isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
               <h1><i className="text-lg fa-solid fa-heart text-[#667653] hover:text-[#F4C7C7]"></i></h1>
@@ -196,8 +194,12 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
             <NavLink  to="/" >
                <h1 onClick={() => setMenuOpen(false)} className="text-lg text-[#8B4513] hover:text-[#A4AD8D]">Home</h1>
             </NavLink>
+
+         <NavLink to="/menu">
+           <h1 onClick={() => setMenuOpen(false)} className="text-lg text-[#8B4513] hover:text-[#A4AD8D]">Menu</h1>
+         </NavLink>
           
-          <div>
+ <div>
   <button
     type="button"
     onClick={() => setMobileCategoriesOpen(!mobileCategoriesOpen)}

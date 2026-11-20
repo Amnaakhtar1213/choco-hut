@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 
 const NavbarGrid = () => {
   const {pathname} = useLocation();
-const isSeasonalPage = ["/christmass", "/halloween"].includes(pathname)
+const isSeasonalPage = ["/christmass", "/halloween", "/menu"].includes(pathname)
   return (
     <>
       {isSeasonalPage ? (

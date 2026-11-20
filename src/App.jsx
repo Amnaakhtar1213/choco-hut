@@ -23,6 +23,7 @@ import SignInPage from './Pages/signInPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProductDetail from './Pages/ProductDetail';
 import Gift from './Pages/Gift';
+import Menu from './Pages/Menu';
 
 function App() {
 
@@ -50,7 +51,8 @@ function App() {
       <Route path="/checkout" element={<CheckoutPage />} />
       <Route path="/user" element={<SignInPage />} />
       <Route path="/signup" element={<SignUpPage />} />
-     <Route path="/gift" element={<Gift />} />
+      <Route path="/gift" element={<Gift />} />
+      <Route path="/menu" element={<Menu />} />
      </Routes>
   
    
