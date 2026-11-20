@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom'
 import CartCard from '../Component/cart/CartCard'
 import { useContext } from 'react'
 import SavedContext from '../Context/SavedContext'
+import { useNavigate } from 'react-router-dom'
 
 const CartPage = () => {
-  const {cartItems} = useContext(SavedContext)
+  const {cartItems, user} = useContext(SavedContext)
+  const navigate = useNavigate()
+
+  function handleCheckout() {
+  navigate(user ? "/checkout" : "/user")
+}
   return (
   <div className="min-h-screen bg-[#d3ddbf]  p-10">
       <div className="flex flex-col items-center">
@@ -28,14 +34,15 @@ const CartPage = () => {
     </div>
 
     <div className="flex justify-end px-6">
-      <Link
-        to="/checkout"
-        className="rounded-xl bg-[#74815F]  px-6 py-3 font-semibold text-white hover:bg-[#96a67b] "
+      <button
+        type="button"
+        onClick={handleCheckout}
+        className="rounded-xl bg-[#74815F] px-6 py-3 font-semibold text-white hover:bg-[#96a67b]"
       >
         Proceed to Checkout
-      </Link>
+   </button>
     </div>
-  </>
+  </> 
 )}
     </div>      
   )

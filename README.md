@@ -69,21 +69,19 @@ Suggested screenshots:
 - Mobile screen (Responsiveness chk)
 
 
-![choco-Hut Home Page]()
+![choco-Hut Home Page](./src/assets/Screenshots/ss-1.png)
 
-![choco-Hut cart Page]()
+![choco-Hut cart Page](./src/assets/Screenshots/ss-5.png)
 
-![choco-Hut saved Page]()
+![choco-Hut saved Page](./src/assets/Screenshots/ss-3.png)
 
-![choco-Hut login Page]()
+![choco-Hut signin Page](./src/assets/Screenshots/ss-4.png)
 
-![choco-Hut signin Page]()
+![choco-Hut product Page](./src/assets/Screenshots/ss-2.png)
 
-![choco-Hut product Page]()
+![choco-Hut checkout Page](./src/assets/Screenshots/ss-6.png)
 
-![choco-Hut checkout Page]()
-
-![choco-Hut mobile screen layout]()
+![choco-Hut mobile screen layout](./src/assets/Screenshots/ss-7.png)
 
 
 
@@ -91,7 +89,7 @@ Suggested screenshots:
 
 ## live-demo 🌐
 
-[choco-Hut live-demo]()
+[choco-Hut live-demo](https://amnaakhtar1213.github.io/choco-hut/)
 
 ----------------------------------------------
 

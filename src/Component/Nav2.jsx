@@ -71,7 +71,9 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
   return (                                                        
     <div>
       <nav className=" md:top-60 left-0 bg-[#A7B48F] w-full h-30 md:h-16 shadow-md z-50">
-        <div className="mx-auto flex h-full items-center justify-between px-6 shadow-md md:justify-center md:gap-20">
+     <div className="mx-auto flex h-full items-center justify-between px-6 shadow-md md:justify-center md:gap-20"> 
+
+        
 
  <div className="md:hidden flex items-center">
             <img src={img13} alt="logo" className="w-70 h-30 object-cover"/>
@@ -150,7 +152,9 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
 </div>
    </div>
 
-  <div className="hidden flex-nowrap items-center justify-center gap-15 md:flex">
+  <div className="hidden flex-nowrap items-center justify-center gap-10 md:flex"> 
+
+  {/* <div className="hidden flex-nowrap items-center justify-end gap-5 md:ml-auto md:flex"> */}
 
 <NavLink to="/save">
   {({ isActive }) => (
@@ -204,10 +208,23 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
           </button>
   </div>
             ): (
-            <NavLink to="/user" className={({isActive}) => 
-          isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
-            <h1 className="text-lg text-[#667653] hover:text-[#F4C7C7]"><i className="fa-solid fa-user"></i></h1>
-           </NavLink>
+          //   <NavLink to="/user" className={({isActive}) => 
+          // isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
+          //   <h1 className="text-lg text-[#667653] hover:text-[#F4C7C7]"><i className="fa-solid fa-user"></i></h1>
+          //  </NavLink>
+
+          <NavLink to="/user">
+  {({ isActive }) => (
+    <i
+      className={`fa-user fa-solid text-lg ${
+        isActive
+          ? "fa-solid text-[#F4C7C7]"
+          : "fa-regular text-[#667653] hover:text-[#F4C7C7]"
+      }`}
+    />
+  )}
+</NavLink>
+
             ) }
             
           </div>
