@@ -68,7 +68,7 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
  const [categoriesOpen, setCategoriesOpen] = useState(false);
  const {user, signOut} = useContext(SavedContext)
 
-  return (
+  return (                                                        
     <div>
       <nav className=" md:top-60 left-0 bg-[#A7B48F] w-full h-30 md:h-16 shadow-md z-50">
         <div className="mx-auto flex h-full items-center justify-between px-6 shadow-md md:justify-center md:gap-20">
@@ -148,21 +148,46 @@ const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
     </div>
   )}
 </div>
-           
-         </div>
+   </div>
 
-          <div className="hidden flex-nowrap items-center justify-center gap-15 md:flex">
-            <NavLink to="save" className={({isActive}) => 
-            isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
-              <h1><i className="text-lg fa-solid fa-heart text-[#667653] hover:text-[#F4C7C7]"></i></h1>
-              </NavLink>
-            <NavLink to="/cart" className={({isActive}) => 
-            isActive ? "underline decoration-[#74815F] underline-offset-4" : "hover:underline decoration-[#74815F]"}>
-               <h1 className="text-2xl text-[#667653] hover:text-[#F4C7C7]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
-                <path fill="currentColor" d="M164.803 436.846q25.188 8.773 59.822 11.544V491h-59.822zM292.843 491h59.822v-54.574q-26.763 8.826-59.822 11.702zM255.606 21c-27.066 0-49.011 28.547-49.011 63.757c0 35.211 21.945 63.758 49.011 63.758s49.012-28.547 49.012-63.758S282.673 21 255.606 21m220.68 286.337c0-89.733-68.092-165.906-160.71-189.205a83.2 83.2 0 0 1-11.997 21.945c-12.32 16.036-29.806 25.188-47.962 25.188s-35.683-9.194-47.962-25.188a83.2 83.2 0 0 1-11.933-21.777c-92.283 23.498-160.008 99.524-160.008 189.037H68.25a144.2 144.2 0 0 1 15.931-66.193a148.6 148.6 0 0 0-3.232 30.803c0 88.893 30.635 160.92 175.068 160.92c153.332 0 175.068-72.08 175.068-160.972a148 148 0 0 0-3.233-30.761a144.2 144.2 0 0 1 15.9 66.203h32.535z" />  
-               </svg></h1>
-            </NavLink>
+  <div className="hidden flex-nowrap items-center justify-center gap-15 md:flex">
+
+<NavLink to="/save">
+  {({ isActive }) => (
+    <i
+      className={`fa-heart fa-solid text-lg ${
+        isActive
+          ? "fa-solid text-[#F4C7C7]"
+          : "fa-regular text-[#667653] hover:text-[#F4C7C7]"
+      }`}
+    />
+  )}
+</NavLink>
+
+<NavLink
+      to="/cart"
+      className={({ isActive }) =>
+        `text-2xl transition ${
+          isActive
+            ? "text-[#F4C7C7]"
+            : "text-[#667653] hover:text-[#F4C7C7]"
+        }`
+      }
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 512 512"
+        aria-label="Cart"
+      >
+        <path
+          fill="currentColor"
+          d="M164.803 436.846q25.188 8.773 59.822 11.544V491h-59.822zM292.843 491h59.822v-54.574q-26.763 8.826-59.822 11.702zM255.606 21c-27.066 0-49.011 28.547-49.011 63.757c0 35.211 21.945 63.758 49.011 63.758s49.012-28.547 49.012-63.758S282.673 21 255.606 21m220.68 286.337c0-89.733-68.092-165.906-160.71-189.205a83.2 83.2 0 0 1-11.997 21.945c-12.32 16.036-29.806 25.188-47.962 25.188s-35.683-9.194-47.962-25.188a83.2 83.2 0 0 1-11.933-21.777c-92.283 23.498-160.008 99.524-160.008 189.037H68.25a144.2 144.2 0 0 1 15.931-66.193a148.6 148.6 0 0 0-3.232 30.803c0 88.893 30.635 160.92 175.068 160.92c153.332 0 175.068-72.08 175.068-160.972a148 148 0 0 0-3.233-30.761a144.2 144.2 0 0 1 15.9 66.203h32.535z"
+        />
+      </svg>
+</NavLink>
+
 
             {user ? (
            <div className="flex items-center gap-4">

@@ -3,16 +3,21 @@
 
 Choco-Hut is a responsive bakery storefront for discovering handcrafted cakes, cupcakes, cookies, macarons, pastries, and desserts. Visitors can browse product categories, view item details, save favorites, and add treats to a cart. The site also includes a gift collection and a contact page, with a warm visual style inspired by the bakery’s cream, chocolate, and sage-green palette.
 
+--------------------------------------------------
+
 ## ✨ Features
 
 - Responsive navigation with category dropdowns on desktop and mobile
 - Product cards with photos, descriptions, ratings, and prices
 - Product detail pop-ups with ingredients, allergens, and stock status
 - Save-to-favorites and shopping cart features
-- Sign-in and sign-out interface
+- Front-end sign-in and sign-out interface that displays the user’s name
+- Dedicated product pages for bakery categories and seasonal collections
 - Gift collection with a video section
 - Contact form with a front-end confirmation message
 - Add menu with their price
+- Separate seasonal and holiday specials section
+-----------------------------------------------
 
 ## 🛠️ Tech stack
 
@@ -24,7 +29,9 @@ Choco-Hut is a responsive bakery storefront for discovering handcrafted cakes, c
 - Context API  ... Shared application state 
 - localStorage  ...  Browser-side data persistence 
 - Vite  Development server and build tooling 
-- Git & GitHub  ... Version control and project hosting 
+- Git & GitHub  ... Version control and project hosting
+-  
+------------------------------------------------
 
 ## 🧠 Key Concepts Practiced
 
@@ -32,7 +39,7 @@ KUPONG demonstrates practical application of core frontend development concepts,
 
 - Component-based architecture and reusable UI
 - React Hooks, including `useState` and `useEffect`
-- Context API for shared state
+- `useContext` for shared data
 - React Router for page navigation
 - Event handling and interactive UI elements
 - JavaScript array methods for working with product data
@@ -41,9 +48,13 @@ KUPONG demonstrates practical application of core frontend development concepts,
 - Organizing code into components, pages, and supporting modules
 - Managing dependencies and running a Vite development environment
 
+------------------------------------------------------------
+
 ## Demo notes
 
 Sign-in is a front-end demonstration using browser local storage; it does not verify accounts with a server. The contact form displays a confirmation message but does not send email. A live store would need a backend or suitable service for account authentication, orders, and contact messages.
+
+------------------------------------------------------
 
 ## 📸 Screenshots
 
@@ -54,30 +65,43 @@ Suggested screenshots:
 - Shopping cart
 - Saved products
 - Login or registration page
+- Checkout page
+- Mobile screen (Responsiveness chk)
 
 
 ![choco-Hut Home Page]()
 
-![choco-Hut Home Page]()
+![choco-Hut cart Page]()
 
-![choco-Hut Home Page](s)
+![choco-Hut saved Page]()
 
-![choco-Hut Home Page]()
+![choco-Hut login Page]()
+
+![choco-Hut signin Page]()
+
+![choco-Hut product Page]()
+
+![choco-Hut checkout Page]()
+
+![choco-Hut mobile screen layout]()
+
+
+
+-----------------------------------------------------------------------
 
 ## live-demo 🌐
 
-## live-demo 🌐
+[choco-Hut live-demo]()
 
-[KUPONG live-demo]()
-
-## Clone the Repository
-```bash
-git clone
-
+----------------------------------------------
 
 ## Clone the Repository
 ```bash
-git clone 
+git clone https://github.com/Amnaakhtar1213/choco-hut.git
+
+
+------------------------------------------------------
+
 
 
 
