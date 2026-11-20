@@ -96,11 +96,3 @@ Suggested screenshots:
 ## Clone the Repository
 ```bash
 git clone https://github.com/Amnaakhtar1213/choco-hut.git
-
-
-------------------------------------------------------
-
-
-
-
-⭐ If you find this project interesting, feel free to explore the repository and follow my frontend development journey!
